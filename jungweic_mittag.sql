@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機: localhost:3306
--- 產生時間： 2017 年 10 月 17 日 00:24
+-- 產生時間： 2017 年 11 月 20 日 21:05
 -- 伺服器版本: 5.6.36-cll-lve
 -- PHP 版本： 5.6.30
 
@@ -52,7 +52,6 @@ INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, 
 (2, 3, '榮斌', '吳', '', '中和區南山路250巷12-1號', '', '新北市', '', 206, 3137, '[]'),
 (3, 4, 'James', 'Wu', '', 'Gfdrest gytrews', '', 'Taipei', '', 206, 3137, '[]'),
 (4, 5, 'lin', 'test', '', '弟只一', '', '台北 (及鄰近地區)', '', 206, 3146, ''),
-(5, 6, '林', '測試', '', '弟只弟只', '', '弟只', '', 206, 3154, ''),
 (6, 7, '姆士', '詹', '', '11321231321321321321321321321321321321321321313132121231', '', '313132131313121321', '12212', 222, 3523, '[]'),
 (7, 8, '老詹', '吳', '', '113212313213213213213213213213213213213213213131321212311212121212121', '', '31313213131312132112121', '23232', 206, 3137, ''),
 (8, 9, 'wei', 'lin', '', '中和南山路', '', '中和', '', 206, 3137, '');
@@ -336,12 +335,18 @@ CREATE TABLE `oc_banner_image` (
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
-(116, 7, 1, 'nacklace1', 'http://www.mittag.com.tw/index.php?route=product/product&amp;path=20_27&amp;product_id=41', 'catalog/ring/40000181-272.jpg', 0),
+(165, 7, 1, 'RG702', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=101', 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_04_S.jpg', 4),
 (119, 9, 1, 'nacklace4', 'http://localhost:8081/mittag/upload/index.php?route=product/product&amp;path=20&amp;product_id=42', 'catalog/ring/F8BA6461CEBFEB8EBA1E1D614F36A909C7F4E1C0.jpg', 0),
 (118, 9, 1, 'necklace5', 'http://localhost:8081/mittag/upload/index.php?route=product/product&amp;path=20&amp;product_id=42', 'catalog/ring/SB295_1.jpg', 0),
-(117, 7, 1, 'nacklace12', 'http://www.mittag.com.tw/index.php?route=product/product&amp;path=20_27&amp;product_id=41', 'catalog/ring/4530098.jpg', 0),
+(163, 7, 1, 'RG703', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=100', 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _03_S.jpg', 2),
 (121, 10, 1, 'demo4', 'http://localhost:8081/mittag/upload/index.php?route=product/product&amp;path=20&amp;product_id=42', 'catalog/thumb_big_share_picture_1366260549.jpg', 0),
-(120, 10, 1, 'demo3', 'http://localhost:8081/mittag/upload/index.php?route=product/product&amp;path=20&amp;product_id=42', 'catalog/ring/2bc6950d-f2ee-49b6-8032-7ea65921a8ab.jpg', 0);
+(120, 10, 1, 'demo3', 'http://localhost:8081/mittag/upload/index.php?route=product/product&amp;path=20&amp;product_id=42', 'catalog/ring/2bc6950d-f2ee-49b6-8032-7ea65921a8ab.jpg', 0),
+(166, 7, 1, 'RG701', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=102', 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_02_S.jpg', 5),
+(167, 7, 1, 'NL719', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=104', 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_01_S.jpg', 6),
+(168, 7, 1, 'NL720', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=103', 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_03_S.jpg', 7),
+(164, 7, 1, 'RG704', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=99', 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_01_S.jpg', 3),
+(162, 7, 1, 'RG705', 'http://www.mittag.com.tw/index.php?route=product/product&amp;path=25&amp;product_id=98', 'catalog/Ring(RG)/RG705/RG705 turning ring_轉折戒指_03_S.jpg', 1),
+(169, 7, 1, '132132132132132112', 'http://www.mittag.com.tw/index.php?route=product/product&amp;product_id=103', 'catalog/TEST0001.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -372,12 +377,12 @@ CREATE TABLE `oc_cart` (
 --
 
 INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `extraDetail`, `extraDetail1`, `extraDetail2`, `extraDetail3`, `extraDetail4`, `extraDetail5`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
-(2, 0, 6, 'rol6h25e17dm8qn7en112opp7o', '', '', '', '', '', '', 81, 0, '[]', 1, '2017-08-28 20:50:03'),
 (18, 0, 8, 'icmvankqdju32j5shr6nlfcd61', '[]', '請選擇戒圍', '0', '', '0', '', 56, 0, '[]', 1, '2017-09-11 09:00:30'),
 (19, 0, 8, 'icmvankqdju32j5shr6nlfcd61', '[]', '請選擇戒圍', '0', '', '0', '', 60, 0, '[]', 1, '2017-09-11 09:00:41'),
 (20, 0, 8, 'icmvankqdju32j5shr6nlfcd61', '[]', '14號(1.8cm)', '', '', '', '', 92, 0, '[]', 1, '2017-09-11 09:00:55'),
 (25, 0, 9, 'vtu569cnl4ho2dlker5u0rh0v4', '[]', '請選擇戒圍', '', '', '', '耳針式耳環', 91, 0, '[]', 1, '2017-09-13 11:09:35'),
-(26, 0, 9, 'vtu569cnl4ho2dlker5u0rh0v4', '[]', '4號(1.3cm)', '', '', '', '', 92, 0, '[]', 1, '2017-09-13 11:43:47');
+(26, 0, 9, 'vtu569cnl4ho2dlker5u0rh0v4', '[]', '4號(1.3cm)', '', '', '', '', 92, 0, '[]', 1, '2017-09-13 11:43:47'),
+(31, 0, 6, 'm51mcpf68qahp0o3pith20n1o0', '[]', '4號(1.3cm)', '', '', '', '耳夾式耳環', 81, 0, '[]', 1, '2017-11-04 17:10:54');
 
 -- --------------------------------------------------------
 
@@ -409,7 +414,7 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (17, '', 0, 1, 1, 4, 1, '2009-01-03 21:08:57', '2017-05-08 18:04:59'),
 (33, '', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2017-05-08 13:29:56'),
 (34, '', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2017-05-08 13:30:12'),
-(60, '', 0, 1, 1, 8, 1, '2017-09-10 13:34:04', '2017-09-10 13:37:03');
+(60, '', 0, 1, 1, 8, 1, '2017-09-10 13:34:04', '2017-10-28 22:34:46');
 
 -- --------------------------------------------------------
 
@@ -502,7 +507,7 @@ INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VAL
 (24, 0, 0),
 (33, 0, 0),
 (34, 0, 0),
-(60, 0, 0);
+(60, 0, 14);
 
 -- --------------------------------------------------------
 
@@ -897,12 +902,12 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, '新台幣', 'TWD', 'NT', '', '0', 1.00000000, 1, '2017-09-14 08:59:00'),
-(2, '人民幣', 'CNY', '¥', '', '2', 0.21670000, 1, '2017-09-14 08:59:00'),
-(3, '港幣', 'HKD', 'HK', '', '2', 0.25900000, 1, '2017-09-14 08:59:00'),
-(4, '英鎊', 'GBP', '£', '', '2', 0.02510000, 1, '2017-09-14 08:59:00'),
-(5, '美元', 'USD', '$', '', '2', 0.03320000, 1, '2017-09-14 08:59:00'),
-(6, '歐元', 'EUR', '', '€', '2', 0.02800000, 1, '2017-09-14 08:59:00');
+(1, '新台幣', 'TWD', 'NT', '', '0', 1.00000000, 1, '2017-11-20 19:51:59'),
+(2, '人民幣', 'CNY', '¥', '', '2', 0.21980000, 1, '2017-10-29 16:47:02'),
+(3, '港幣', 'HKD', 'HK', '', '2', 0.25799999, 1, '2017-10-29 16:47:02'),
+(4, '英鎊', 'GBP', '£', '', '2', 0.02520000, 1, '2017-10-29 16:47:02'),
+(5, '美元', 'USD', '$', '', '2', 0.03310000, 1, '2017-10-29 16:47:02'),
+(6, '歐元', 'EUR', '', '€', '2', 0.02850000, 1, '2017-10-29 16:47:02');
 
 -- --------------------------------------------------------
 
@@ -942,11 +947,9 @@ CREATE TABLE `oc_customer` (
 
 INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `language_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `custom_field`, `ip`, `status`, `approved`, `safe`, `token`, `code`, `date_added`) VALUES
 (1, 1, 0, 1, 'Wayne', 'Lin', 'Anikiwayne@gmail.com', '0932000181', '', '12eca92ea753df4f35b677bf4f60770a394a9504', 'gCWM1mrvz', NULL, NULL, 1, 1, '', '220.135.38.215', 1, 1, 0, '', '', '2016-11-12 11:10:23'),
-(2, 1, 0, 0, 'lin', 'lingwei', 'linjohnwayne@gmail.com', '02222222222222', '', '8342c503c5170e86952cda5ec2f41b18b7390db7', 'brn6KxUy8', NULL, NULL, 1, 0, '', '', 1, 1, 0, '', '', '2016-11-24 16:32:19'),
 (3, 3, 0, 1, '榮斌', '吳', 'ukjames312@hotmail.com', '0952829779', '', '456baa956b1fb7181b99e34112544112e0c6f755', 'dFxCn2Qxy', NULL, NULL, 1, 2, '{\"1\":\"\",\"3\":\"\",\"4\":\"\",\"2\":\"\"}', '61.228.18.67', 1, 1, 0, '', '', '2017-03-15 08:47:19'),
 (4, 3, 0, 1, 'James', 'Wu', 'ukjames312@gmail.com', '02-2222222222', '', '9d81cca9f1330bfe73fd1394b5fc14987e2acfdf', 'KwuGCsCqk', NULL, NULL, 0, 3, '{\"1\":\"\",\"3\":\"\",\"4\":\"\",\"2\":\"\"}', '61.228.19.76', 1, 1, 0, '', '', '2017-05-19 14:33:08'),
 (5, 1, 0, 1, 'lin', 'test', 'testestestestestestestesetestesasteste1111111@gmail.com', '0932000181', '09123123123', '5f959a202366e1a15d27fae1d8d6cd33b3179328', 'OLdepV79g', NULL, NULL, 0, 4, '{\"1\":\"2017-07-02 21:22\"}', '::1', 1, 1, 0, '', '', '2017-07-09 17:03:12'),
-(6, 1, 0, 1, '林', '測試', 'aniki_wayne@yahoo.com.tw', '091111111', '09123123123', '01e1a5200d04d7307faead9e576a75c3613e414e', 'uPcMw241n', NULL, NULL, 1, 5, '{\"1\":\"2017-07-19 21:22\"}', '::1', 1, 1, 0, '', '', '2017-07-09 19:54:25'),
 (7, 3, 0, 1, '姆士', '詹', 'ukjames312312@gmail.com', '0952829779', '', 'de3366f39c150a5a0040f7f5fb942e7bcbbe2c82', 'yNvyxSRBv', NULL, NULL, 1, 6, '{\"1\":\"2015-07-14\",\"3\":\"5\",\"4\":\"2017-08-30\",\"2\":\"3\"}', '61.228.19.76', 1, 1, 0, '', '', '2017-09-10 10:33:53'),
 (8, 1, 0, 1, '老詹', '吳', 'ukjames312312312@gmail.com', '0923232323', '', '6a0bfe5ae620aa100a7b25fe678fe2799dec1f5b', 'MQMWqTJyz', NULL, NULL, 1, 7, '{\"1\":\"2014-11-03\",\"4\":\"\",\"2\":\"3\",\"3\":\"5\"}', '61.228.19.76', 1, 1, 0, '', '', '2017-09-11 08:59:57'),
 (9, 1, 0, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', 'a142f940cc36d48497213e25fe274e1cf094214a', 'S4OcgUb6n', NULL, NULL, 1, 8, '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', '59.115.237.71', 1, 1, 0, '', '', '2017-09-13 08:33:22');
@@ -1048,8 +1051,6 @@ INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added
 (6, 4, '36.229.211.100', '2017-05-23 21:56:53'),
 (7, 1, '::1', '2017-07-01 17:53:55'),
 (8, 5, '::1', '2017-07-09 17:03:12'),
-(9, 6, '::1', '2017-07-09 19:54:26'),
-(10, 6, '127.0.0.1', '2017-08-26 13:55:47'),
 (11, 1, '220.135.38.215', '2017-09-08 20:58:40'),
 (12, 4, '61.228.19.76', '2017-09-10 08:17:17'),
 (13, 7, '61.228.19.76', '2017-09-10 10:33:54'),
@@ -1085,12 +1086,15 @@ INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `d
 (8, 'lingwei', '36.229.150.4', 1, '2017-05-19 14:29:01', '2017-05-19 14:29:01'),
 (11, 'lingwei', '36.229.211.100', 5, '2017-05-23 14:43:21', '2017-05-23 14:44:07'),
 (10, 'ukjames312@hotmail.com', '36.229.150.4', 1, '2017-05-19 14:30:51', '2017-05-19 14:30:51'),
-(12, '', '::1', 1, '2017-08-21 14:17:18', '2017-08-21 14:17:18'),
+(12, '', '::1', 2, '2017-08-21 14:17:18', '2017-10-23 14:52:43'),
 (14, 'admin', '220.135.38.215', 1, '2017-09-08 20:58:22', '2017-09-08 20:58:22'),
 (15, 'ukjames312@gmail.com', '61.228.19.76', 5, '2017-09-10 22:33:31', '2017-09-10 22:34:25'),
 (16, 'ukjames', '61.228.19.76', 2, '2017-09-10 22:33:52', '2017-09-10 22:33:57'),
 (17, 'ukjames312@gmail.com', '59.115.237.71', 1, '2017-09-13 08:23:40', '2017-09-13 08:23:40'),
-(18, 'ligwei005@gmail.com', '59.115.237.71', 1, '2017-09-13 09:10:30', '2017-09-13 09:10:30');
+(18, 'ligwei005@gmail.com', '59.115.237.71', 1, '2017-09-13 09:10:30', '2017-09-13 09:10:30'),
+(19, 'admin', '::1', 1, '2017-10-21 13:50:05', '2017-10-21 13:50:05'),
+(20, 'ukjames312@gmail.com', '36.229.208.124', 2, '2017-11-20 16:12:46', '2017-11-20 16:13:01'),
+(21, 'lingwei', '36.229.208.124', 1, '2017-11-20 16:13:13', '2017-11-20 16:13:13');
 
 -- --------------------------------------------------------
 
@@ -1120,13 +1124,6 @@ CREATE TABLE `oc_customer_reward` (
   `points` int(8) NOT NULL DEFAULT '0',
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `oc_customer_reward`
---
-
-INSERT INTO `oc_customer_reward` (`customer_reward_id`, `customer_id`, `order_id`, `description`, `points`, `date_added`) VALUES
-(1, 2, 0, '', 5, '2017-05-18 13:48:15');
 
 -- --------------------------------------------------------
 
@@ -1162,14 +1159,6 @@ CREATE TABLE `oc_customer_transaction` (
   `amount` decimal(15,4) NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 資料表的匯出資料 `oc_customer_transaction`
---
-
-INSERT INTO `oc_customer_transaction` (`customer_transaction_id`, `customer_id`, `order_id`, `description`, `amount`, `date_added`) VALUES
-(1, 2, 0, '', '0.0000', '2017-05-18 13:47:24'),
-(2, 2, 0, '', '30.0000', '2017-05-18 13:47:42');
 
 -- --------------------------------------------------------
 
@@ -1212,9 +1201,9 @@ CREATE TABLE `oc_custom_field` (
 --
 
 INSERT INTO `oc_custom_field` (`custom_field_id`, `type`, `value`, `validation`, `location`, `status`, `sort_order`) VALUES
-(1, 'date', '', '', 'account', 1, 3),
+(1, 'date', '', '', 'account', 0, 3),
 (4, 'date', '', '', 'account', 1, 6),
-(2, 'select', '', '', 'account', 1, 7),
+(2, 'select', '', '', 'account', 0, 7),
 (3, 'select', '', '', 'account', 1, 6);
 
 -- --------------------------------------------------------
@@ -1278,10 +1267,10 @@ CREATE TABLE `oc_custom_field_value` (
 --
 
 INSERT INTO `oc_custom_field_value` (`custom_field_value_id`, `custom_field_id`, `sort_order`) VALUES
-(1, 2, 0),
-(2, 2, 0),
-(3, 2, 0),
 (4, 2, 0),
+(3, 2, 0),
+(2, 2, 0),
+(1, 2, 0),
 (5, 3, 0),
 (6, 3, 0);
 
@@ -1303,10 +1292,10 @@ CREATE TABLE `oc_custom_field_value_description` (
 --
 
 INSERT INTO `oc_custom_field_value_description` (`custom_field_value_id`, `language_id`, `custom_field_id`, `name`) VALUES
-(1, 1, 2, '25歲以下'),
-(2, 1, 2, '26~35歲'),
-(3, 1, 2, '36~45歲'),
 (4, 1, 2, '46歲以上'),
+(3, 1, 2, '36~45歲'),
+(2, 1, 2, '26~35歲'),
+(1, 1, 2, '25歲以下'),
 (5, 1, 3, '男'),
 (6, 1, 3, '女');
 
@@ -1334,6 +1323,39 @@ CREATE TABLE `oc_download_description` (
   `language_id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `oc_easy_blog_article`
+--
+
+CREATE TABLE `oc_easy_blog_article` (
+  `article_id` int(11) NOT NULL,
+  `sort_order` int(11) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `date_modified` datetime NOT NULL,
+  `viewed` int(5) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `oc_easy_blog_article_description`
+--
+
+CREATE TABLE `oc_easy_blog_article_description` (
+  `article_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `intro_text` text NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `tag` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1405,7 +1427,11 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (29, 'analytics', 'google_analytics'),
 (30, 'module', 'html'),
 (31, 'payment', 'bank_transfer'),
-(32, 'shipping', 'pickup');
+(32, 'shipping', 'pickup'),
+(33, 'module', 'latest'),
+(34, 'module', 'bestseller'),
+(35, 'module', 'simple_blog'),
+(36, 'module', 'simple_blog_category');
 
 -- --------------------------------------------------------
 
@@ -1500,7 +1526,8 @@ INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`
 (5, 1, 2, 1),
 (6, 1, 5, 1),
 (7, 1, 3, 1),
-(8, 1, 4, 1);
+(8, 1, 4, 1),
+(9, 1, 10, 1);
 
 -- --------------------------------------------------------
 
@@ -1532,7 +1559,8 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 (4, 1, '關於mittag', '&lt;!--[if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;o:OfficeDocumentSettings&gt;\r\n  &lt;o:RelyOnVML&gt;&lt;/o:RelyOnVML&gt;\r\n  &lt;o:AllowPNG&gt;&lt;/o:AllowPNG&gt;\r\n &lt;/o:OfficeDocumentSettings&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;\r\n\r\n&lt;!--[if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:WordDocument&gt;\r\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\r\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\r\n  &lt;w:TrackMoves&gt;&lt;/w:TrackMoves&gt;\r\n  &lt;w:TrackFormatting&gt;&lt;/w:TrackFormatting&gt;\r\n  &lt;w:PunctuationKerning&gt;&lt;/w:PunctuationKerning&gt;\r\n  &lt;w:DrawingGridVerticalSpacing&gt;10 pt&lt;/w:DrawingGridVerticalSpacing&gt;\r\n  &lt;w:DisplayHorizontalDrawingGridEvery&gt;0&lt;/w:DisplayHorizontalDrawingGridEvery&gt;\r\n  &lt;w:DisplayVerticalDrawingGridEvery&gt;2&lt;/w:DisplayVerticalDrawingGridEvery&gt;\r\n  &lt;w:ValidateAgainstSchemas&gt;&lt;/w:ValidateAgainstSchemas&gt;\r\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\r\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\r\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\r\n  &lt;w:DoNotPromoteQF&gt;&lt;/w:DoNotPromoteQF&gt;\r\n  &lt;w:LidThemeOther&gt;EN-US&lt;/w:LidThemeOther&gt;\r\n  &lt;w:LidThemeAsian&gt;ZH-TW&lt;/w:LidThemeAsian&gt;\r\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\r\n  &lt;w:Compatibility&gt;\r\n   &lt;w:SpaceForUL&gt;&lt;/w:SpaceForUL&gt;\r\n   &lt;w:BalanceSingleByteDoubleByteWidth&gt;&lt;/w:BalanceSingleByteDoubleByteWidth&gt;\r\n   &lt;w:DoNotLeaveBackslashAlone&gt;&lt;/w:DoNotLeaveBackslashAlone&gt;\r\n   &lt;w:ULTrailSpace&gt;&lt;/w:ULTrailSpace&gt;\r\n   &lt;w:DoNotExpandShiftReturn&gt;&lt;/w:DoNotExpandShiftReturn&gt;\r\n   &lt;w:AdjustLineHeightInTable&gt;&lt;/w:AdjustLineHeightInTable&gt;\r\n   &lt;w:BreakWrappedTables&gt;&lt;/w:BreakWrappedTables&gt;\r\n   &lt;w:SnapToGridInCell&gt;&lt;/w:SnapToGridInCell&gt;\r\n   &lt;w:WrapTextWithPunct&gt;&lt;/w:WrapTextWithPunct&gt;\r\n   &lt;w:UseAsianBreakRules&gt;&lt;/w:UseAsianBreakRules&gt;\r\n   &lt;w:DontGrowAutofit&gt;&lt;/w:DontGrowAutofit&gt;\r\n   &lt;w:SplitPgBreakAndParaMark&gt;&lt;/w:SplitPgBreakAndParaMark&gt;\r\n   &lt;w:EnableOpenTypeKerning&gt;&lt;/w:EnableOpenTypeKerning&gt;\r\n   &lt;w:DontFlipMirrorIndents&gt;&lt;/w:DontFlipMirrorIndents&gt;\r\n   &lt;w:OverrideTableStyleHps&gt;&lt;/w:OverrideTableStyleHps&gt;\r\n   &lt;w:UseFELayout&gt;&lt;/w:UseFELayout&gt;\r\n  &lt;/w:Compatibility&gt;\r\n  &lt;m:mathPr&gt;\r\n   &lt;m:mathFont m:val=&quot;Cambria Math&quot;&gt;&lt;/m:mathFont&gt;\r\n   &lt;m:brkBin m:val=&quot;before&quot;&gt;&lt;/m:brkBin&gt;\r\n   &lt;m:brkBinSub m:val=&quot;&amp;#45;-&quot;&gt;&lt;/m:brkBinSub&gt;\r\n   &lt;m:smallFrac m:val=&quot;off&quot;&gt;&lt;/m:smallFrac&gt;\r\n   &lt;m:dispDef&gt;&lt;/m:dispDef&gt;\r\n   &lt;m:lMargin m:val=&quot;0&quot;&gt;&lt;/m:lMargin&gt;\r\n   &lt;m:rMargin m:val=&quot;0&quot;&gt;&lt;/m:rMargin&gt;\r\n   &lt;m:defJc m:val=&quot;centerGroup&quot;&gt;&lt;/m:defJc&gt;\r\n   &lt;m:wrapIndent m:val=&quot;1440&quot;&gt;&lt;/m:wrapIndent&gt;\r\n   &lt;m:intLim m:val=&quot;subSup&quot;&gt;&lt;/m:intLim&gt;\r\n   &lt;m:naryLim m:val=&quot;undOvr&quot;&gt;&lt;/m:naryLim&gt;\r\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:LatentStyles DefLockedState=&quot;false&quot; DefUnhideWhenUsed=&quot;false&quot;\r\n  DefSemiHidden=&quot;false&quot; DefQFormat=&quot;false&quot; DefPriority=&quot;99&quot;\r\n  LatentStyleCount=&quot;381&quot;&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;0&quot; QFormat=&quot;true&quot; Name=&quot;Normal&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; QFormat=&quot;true&quot; Name=&quot;heading 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;9&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;heading 9&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index 9&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;toc 9&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Normal Indent&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;footnote text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;annotation text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;header&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;footer&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;index heading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;35&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;caption&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;table of figures&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;envelope address&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;envelope return&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;footnote reference&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;annotation reference&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;line number&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;page number&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;endnote reference&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;endnote text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;table of authorities&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;macro&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;toa heading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Bullet&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Number&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Bullet 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Bullet 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Bullet 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Bullet 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Number 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Number 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Number 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Number 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;10&quot; QFormat=&quot;true&quot; Name=&quot;Title&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Closing&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Signature&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;1&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;Default Paragraph Font&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text Indent&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Continue&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Continue 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Continue 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Continue 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;List Continue 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Message Header&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;11&quot; QFormat=&quot;true&quot; Name=&quot;Subtitle&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Salutation&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Date&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text First Indent&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text First Indent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Heading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text Indent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Body Text Indent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Block Text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Hyperlink&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;FollowedHyperlink&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;22&quot; QFormat=&quot;true&quot; Name=&quot;Strong&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;20&quot; QFormat=&quot;true&quot; Name=&quot;Emphasis&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Document Map&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Plain Text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;E-mail Signature&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Top of Form&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Bottom of Form&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Normal (Web)&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Acronym&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Address&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Cite&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Code&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Definition&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Keyboard&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Preformatted&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Sample&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Typewriter&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;HTML Variable&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Normal Table&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;annotation subject&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;No List&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Outline List 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Outline List 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Outline List 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Simple 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Simple 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Simple 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Classic 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Classic 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Classic 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Classic 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Colorful 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Colorful 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Colorful 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Columns 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Columns 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Columns 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Columns 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Columns 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Grid 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table List 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table 3D effects 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table 3D effects 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table 3D effects 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Contemporary&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Elegant&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Professional&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Subtle 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Subtle 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Web 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Web 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Web 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Balloon Text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; Name=&quot;Table Grid&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Table Theme&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 7&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 8&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Note Level 9&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; Name=&quot;Placeholder Text&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;1&quot; QFormat=&quot;true&quot; Name=&quot;No Spacing&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; Name=&quot;Revision&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;34&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;List Paragraph&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;29&quot; QFormat=&quot;true&quot; Name=&quot;Quote&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;30&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;Intense Quote&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;60&quot; Name=&quot;Light Shading Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;61&quot; Name=&quot;Light List Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;62&quot; Name=&quot;Light Grid Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;63&quot; Name=&quot;Medium Shading 1 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;64&quot; Name=&quot;Medium Shading 2 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;65&quot; Name=&quot;Medium List 1 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;66&quot; Name=&quot;Medium List 2 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;67&quot; Name=&quot;Medium Grid 1 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;68&quot; Name=&quot;Medium Grid 2 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;69&quot; Name=&quot;Medium Grid 3 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;70&quot; Name=&quot;Dark List Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;71&quot; Name=&quot;Colorful Shading Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;72&quot; Name=&quot;Colorful List Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;73&quot; Name=&quot;Colorful Grid Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;19&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;Subtle Emphasis&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;21&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;Intense Emphasis&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;31&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;Subtle Reference&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;32&quot; QFormat=&quot;true&quot;\r\n   Name=&quot;Intense Reference&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;33&quot; QFormat=&quot;true&quot; Name=&quot;Book Title&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;37&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; Name=&quot;Bibliography&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;39&quot; SemiHidden=&quot;true&quot;\r\n   UnhideWhenUsed=&quot;true&quot; QFormat=&quot;true&quot; Name=&quot;TOC Heading&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;41&quot; Name=&quot;Plain Table 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;42&quot; Name=&quot;Plain Table 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;43&quot; Name=&quot;Plain Table 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;44&quot; Name=&quot;Plain Table 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;45&quot; Name=&quot;Plain Table 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;40&quot; Name=&quot;Grid Table Light&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot; Name=&quot;Grid Table 1 Light&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot; Name=&quot;Grid Table 6 Colorful&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot; Name=&quot;Grid Table 7 Colorful&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;Grid Table 1 Light Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;Grid Table 2 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;Grid Table 3 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;Grid Table 4 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;Grid Table 5 Dark Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;Grid Table 6 Colorful Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;Grid Table 7 Colorful Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot; Name=&quot;List Table 1 Light&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot; Name=&quot;List Table 6 Colorful&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot; Name=&quot;List Table 7 Colorful&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 1&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 2&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 3&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 4&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 5&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;46&quot;\r\n   Name=&quot;List Table 1 Light Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;47&quot; Name=&quot;List Table 2 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;48&quot; Name=&quot;List Table 3 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;49&quot; Name=&quot;List Table 4 Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;50&quot; Name=&quot;List Table 5 Dark Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;51&quot;\r\n   Name=&quot;List Table 6 Colorful Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; Priority=&quot;52&quot;\r\n   Name=&quot;List Table 7 Colorful Accent 6&quot;&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=&quot;false&quot; SemiHidden=&quot;true&quot; UnhideWhenUsed=&quot;true&quot;\r\n   Name=&quot;Mention&quot;&gt;&lt;/w:LsdException&gt;\r\n &lt;/w:LatentStyles&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;\r\n\r\n&lt;!--[if gte mso 10]&gt;\r\n&lt;style&gt;\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n	{mso-style-name:表格內文;\r\n	mso-tstyle-rowband-size:0;\r\n	mso-tstyle-colband-size:0;\r\n	mso-style-noshow:yes;\r\n	mso-style-priority:99;\r\n	mso-style-parent:&quot;&quot;;\r\n	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;\r\n	mso-para-margin:0cm;\r\n	mso-para-margin-bottom:.0001pt;\r\n	mso-pagination:widow-orphan;\r\n	font-size:12.0pt;\r\n	mso-bidi-font-size:11.0pt;\r\n	font-family:Calibri;\r\n	mso-ascii-font-family:Calibri;\r\n	mso-ascii-theme-font:minor-latin;\r\n	mso-hansi-font-family:Calibri;\r\n	mso-hansi-theme-font:minor-latin;\r\n	mso-font-kerning:1.0pt;}\r\n&lt;/style&gt;\r\n&lt;![endif]--&gt;\r\n\r\n\r\n\r\n&lt;!--StartFragment--&gt;\r\n\r\n&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://www.mittag.com.tw/image/catalog/wedding-1412220_1280.jpg&quot; style=&quot;width: 430.5px; height: 287.334px;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;mittag(德文)_午間(lunch break)&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;是整天忙碌工作中的一小小段時間(lunch break)可以完全屬於自己,做自己.在這段lunch break, &lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;我們得以回歸自然(nature),回歸自我(me);如同品牌想要傳達的反璞歸真,忠於自我的意境(natureME).&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;mittag同時還是2個英文單字的結合: mit &amp;amp; tag → mit brand → 因為,&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;我們是來自台灣的品牌!我們以mit而感到驕傲! 我們熱愛mit! 我們支持mit! 我們堅持mit!&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;mittag設計的中心思想: 簡約、自然&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoListParagraph&quot; style=&quot;margin-left:0cm;mso-para-margin-left:0gd&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; line-height: 19.0476px;&quot;&gt;簡約: 不過多的設計 純粹的感動。自然: 自然的材質 樸實的質感。&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;', '品牌故事', '', '');
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (7, 1, 'FAQ', '&lt;p&gt;Q&lt;/p&gt;&lt;p&gt;A&lt;/p&gt;&lt;p&gt;Q&lt;/p&gt;&lt;p&gt;A&lt;/p&gt;', 'FAQ', '', ''),
-(8, 1, '聯絡mittag', '&lt;p&gt;mittag 聯絡方式&lt;/p&gt;', 'MITTAG CONTACT', '', '');
+(8, 1, '聯絡mittag', '&lt;p&gt;mittag 聯絡方式&lt;/p&gt;', 'MITTAG CONTACT', '', ''),
+(9, 1, '產品包裝', '&lt;p&gt;產品包裝&lt;/p&gt;', '產品包裝', '', '');
 
 -- --------------------------------------------------------
 
@@ -1556,7 +1584,8 @@ INSERT INTO `oc_information_to_layout` (`information_id`, `store_id`, `layout_id
 (3, 0, 0),
 (5, 0, 0),
 (7, 0, 0),
-(8, 0, 0);
+(8, 0, 0),
+(9, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1579,7 +1608,8 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 (5, 0),
 (6, 0),
 (7, 0),
-(8, 0);
+(8, 0),
+(9, 0);
 
 -- --------------------------------------------------------
 
@@ -1633,7 +1663,8 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 (10, '推薦帳戶(Affiliate)'),
 (11, '商店訊息(Information)'),
 (12, '商品比較(Compare)'),
-(13, '商品搜尋(Search)');
+(13, '商品搜尋(Search)'),
+(14, 'activity');
 
 -- --------------------------------------------------------
 
@@ -1658,9 +1689,9 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (3, 4, '0', 'content_top', 1),
 (20, 5, '0', 'column_left', 2),
 (69, 10, 'affiliate', 'column_right', 1),
-(125, 1, 'slideshow.33', 'content_top', 2),
-(124, 1, 'slideshow.32', 'content_top', 1),
-(123, 1, 'slideshow.27', 'content_top', 0);
+(138, 1, 'latest.37', 'content_top', 3),
+(137, 1, 'slideshow.32', 'content_top', 1),
+(136, 1, 'slideshow.27', 'content_top', 0);
 
 -- --------------------------------------------------------
 
@@ -1683,7 +1714,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (72, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
 (71, 3, 0, 'product/category'),
-(70, 1, 0, 'common/home'),
+(76, 1, 0, 'common/home'),
 (20, 2, 0, 'product/product'),
 (64, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
@@ -1875,6 +1906,14 @@ CREATE TABLE `oc_modification` (
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 資料表的匯出資料 `oc_modification`
+--
+
+INSERT INTO `oc_modification` (`modification_id`, `name`, `code`, `author`, `version`, `link`, `xml`, `status`, `date_added`) VALUES
+(1, '无需FTP配置使用OCMOD方式上传安装扩充功能', 'noftp_ocmod', 'opencart.cn', '1.1.1', 'http://www.opencart.cn', '<modification>\r\n    <name>无需FTP配置使用OCMOD方式上传安装扩充功能</name>\r\n	<version>1.1.1</version>\r\n	<link>http://www.opencart.cn</link>\r\n	<author>opencart.cn</author>\r\n	<code>noftp_ocmod</code>\r\n\r\n	<file path=\"admin/controller/extension/installer.php\">\r\n		<operation>\r\n			<search ><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/ftp\', \'token=\' . $this->session->data[\'token\'], \'SSL\')),]]></search>\r\n			<add position=\"replace\"><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/localcopy\', \'token=\' . $this->session->data[\'token\'], \'SSL\')),]]></add>\r\n		</operation>\r\n\r\n		<operation>\r\n			<search><![CDATA[public function unzip() {]]></search>\r\n			<add position=\"before\"><![CDATA[			\r\n	public function localcopy() {\r\n		$this->load->language(\'extension/installer\');\r\n\r\n		$json = array();\r\n\r\n		if (!$this->user->hasPermission(\'modify\', \'extension/installer\')) {\r\n			$json[\'error\'] = $this->language->get(\'error_permission\');\r\n		}\r\n\r\n        \r\n        $directory = DIR_UPLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n        \r\n\r\n		if (!is_dir($directory)) {\r\n			$json[\'error\'] = $this->language->get(\'error_directory\');\r\n		}\r\n\r\n		if (!$json) {\r\n			// Get a list of files ready to upload\r\n			$files = array();\r\n\r\n			$path = array($directory . \'*\');\r\n\r\n			while (count($path) != 0) {\r\n				$next = array_shift($path);\r\n\r\n				foreach (glob($next) as $file) {\r\n					if (is_dir($file)) {\r\n						$path[] = $file . \'/*\';\r\n					}\r\n\r\n					$files[] = $file;\r\n				}\r\n			}\r\n\r\n			$root = dirname(DIR_APPLICATION).\'/\';\r\n\r\n			foreach ($files as $file) {\r\n				// Upload everything in the upload directory\r\n				$destination = $root.substr($file, strlen($directory));\r\n\r\n				if (is_dir($file)) {\r\n					$list = glob(rtrim($destination, \'/\').\'/*\');\r\n\r\n					if (!file_exists($destination)) {\r\n						if (!mkdir($destination)) {\r\n							$json[\'error\'] = sprintf($this->language->get(\'error_ftp_directory\'), $destination);\r\n						}\r\n					}\r\n				}\r\n\r\n				if (is_file($file)) {\r\n					if (!copy($file, $destination)) {\r\n						$json[\'error\'] = sprintf($this->language->get(\'error_ftp_file\'), $file);\r\n					}\r\n				}\r\n			}\r\n		}\r\n\r\n		$this->response->addHeader(\'Content-Type: application/json\');\r\n		$this->response->setOutput(json_encode($json));\r\n	}]]></add>\r\n		</operation>\r\n	</file>	\r\n</modification>', 1, '2017-10-28 23:03:05'),
+(2, 'Local copy OCMOD by iSenseLabs', 'isensealabs_quickfix_ocmod', 'iSenseLabs', '1.3', 'http://isenselabs.com', '<modification>\r\n    <name>Local copy OCMOD by iSenseLabs</name>\r\n	<version>1.3</version>\r\n	<link>http://isenselabs.com</link>\r\n	<author>iSenseLabs</author>\r\n	<code>isensealabs_quickfix_ocmod</code>\r\n\r\n	<file path=\"admin/controller/extension/installer.php\">\r\n		<operation error=\"skip\">\r\n			<search ><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/ftp\', \'token=\' . $this->session->data[\'token\'],]]></search>\r\n			<add position=\"replace\"><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/localcopy\', \'token=\' . $this->session->data[\'token\'],]]></add>\r\n		</operation>\r\n\r\n		<operation>\r\n			<search><![CDATA[public function unzip() {]]></search>\r\n			<add position=\"before\"><![CDATA[			\r\n	public function localcopy() {\r\n		$this->load->language(\'extension/installer\');\r\n\r\n		$json = array();\r\n\r\n		if (!$this->user->hasPermission(\'modify\', \'extension/installer\')) {\r\n			$json[\'error\'] = $this->language->get(\'error_permission\');\r\n		}\r\n\r\n		if (VERSION == \'2.0.0.0\') {\r\n		    $directory = DIR_DOWNLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		} else {\r\n		    $directory = DIR_UPLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		}\r\n\r\n		if (!is_dir($directory)) {\r\n			$json[\'error\'] = $this->language->get(\'error_directory\');\r\n		}\r\n\r\n		if (!$json) {\r\n			// Get a list of files ready to upload\r\n			$files = array();\r\n\r\n			$path = array($directory . \'*\');\r\n\r\n			while (count($path) != 0) {\r\n				$next = array_shift($path);\r\n\r\n				foreach (glob($next) as $file) {\r\n					if (is_dir($file)) {\r\n						$path[] = $file . \'/*\';\r\n					}\r\n\r\n					$files[] = $file;\r\n				}\r\n			}\r\n\r\n			$root = dirname(DIR_APPLICATION).\'/\';\r\n\r\n			foreach ($files as $file) {\r\n				// Upload everything in the upload directory\r\n				$destination = substr($file, strlen($directory));\r\n\r\n				// Update from newer OpenCart versions:\r\n				if (substr($destination, 0, 5) == \'admin\') {\r\n					$destination = DIR_APPLICATION . substr($destination, 5);\r\n				} else if (substr($destination, 0, 7) == \'catalog\') {\r\n					$destination = DIR_CATALOG . substr($destination, 7);\r\n				} else if (substr($destination, 0, 5) == \'image\') {\r\n					$destination = DIR_IMAGE . substr($destination, 5);\r\n				} else if (substr($destination, 0, 6) == \'system\') {\r\n					$destination = DIR_SYSTEM . substr($destination, 6);\r\n				} else {\r\n					$destination = $root.$destination;\r\n				}\r\n\r\n				if (is_dir($file)) {\r\n					if (!file_exists($destination)) {\r\n						if (!mkdir($destination)) {\r\n							$json[\'error\'] = sprintf($this->language->get(\'error_ftp_directory\'), $destination);\r\n						}\r\n					}\r\n				}\r\n\r\n				if (is_file($file)) {\r\n					if (!copy($file, $destination)) {\r\n						$json[\'error\'] = sprintf($this->language->get(\'error_ftp_file\'), $file);\r\n					}\r\n				}\r\n			}\r\n		}\r\n\r\n		$this->response->addHeader(\'Content-Type: application/json\');\r\n		$this->response->setOutput(json_encode($json));\r\n	}]]></add>\r\n		</operation>\r\n	</file>	\r\n</modification>\r\n', 1, '2017-10-28 23:58:12');
+
 -- --------------------------------------------------------
 
 --
@@ -1899,7 +1938,10 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (27, 'Home Page', 'slideshow', '{\"name\":\"Home Page\",\"banner_id\":\"7\",\"width\":\"1140\",\"height\":\"500\",\"status\":\"1\"}'),
 (31, 'Banner 1', 'banner', '{\"name\":\"Banner 1\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"1\"}'),
 (32, 'Home Page Slideshow2', 'slideshow', '{\"name\":\"Home Page Slideshow2\",\"banner_id\":\"9\",\"width\":\"680\",\"height\":\"380\",\"status\":\"0\"}'),
-(33, 'slideshow3', 'slideshow', '{\"name\":\"slideshow3\",\"banner_id\":\"10\",\"width\":\"680\",\"height\":\"380\",\"status\":\"0\"}');
+(33, 'slideshow3', 'slideshow', '{\"name\":\"slideshow3\",\"banner_id\":\"10\",\"width\":\"680\",\"height\":\"380\",\"status\":\"0\"}'),
+(36, 'newest', 'bestseller', '{\"name\":\"newest\",\"limit\":\"999\",\"width\":\"200\",\"height\":\"200\",\"status\":\"0\"}'),
+(37, 'newest prod', 'latest', '{\"name\":\"newest prod\",\"limit\":\"20\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
+(38, 'blog', 'html', '{\"name\":\"blog\",\"module_description\":{\"1\":{\"title\":\"blog\",\"description\":\"&lt;p&gt;sdaffsafsadfsdfdsfsadfdsafdsafsfsafsafsafsafsfsfdd&lt;\\/p&gt;\"}},\"status\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -2242,7 +2284,9 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (103, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 4, 1, 'James', 'Wu', 'ukjames312@gmail.com', '02-2222222222', '', '', 'James', 'Wu', '', 'Gfdrest gytrews', '', 'Taipei', '', '台灣', 206, '新北市', 3137, '', '[]', '貨到付款', 'cod', 'James', 'Wu', '', 'Gfdrest gytrews', '', 'Taipei', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '10555.0000', 1, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '61.228.19.76', '', 'Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/61.0.3163.73 Mobile/14G60 Safari/602.1', 'zh-tw', '2017-09-10 08:36:35', '2017-09-10 08:36:47'),
 (104, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 4, 1, 'James', 'Wu', 'ukjames312@gmail.com', '02-2222222222', '', '', 'James', 'Wu', '', 'Gfdrest gytrews', '', 'Taipei', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'James', 'Wu', '', 'Gfdrest gytrews', '', 'Taipei', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '10805.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '61.228.19.76', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-10 12:00:43', '2017-09-10 12:00:51'),
 (105, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 9, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '6655.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '59.115.237.71', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-13 09:11:28', '2017-09-13 09:12:52'),
-(106, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 9, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '3505.0000', 0, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '59.115.237.71', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-13 11:22:31', '2017-09-13 11:22:31');
+(106, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 9, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '3505.0000', 0, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '59.115.237.71', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-13 11:22:31', '2017-09-13 11:22:31'),
+(107, 0, 'INV-2013-00', 0, 'MITTAG', 'http://localhost/mittag2/', 6, 1, '林', '測試', 'aniki_wayne@yahoo.com.tw', '091111111', '09123123123', '{\"1\":\"2017-07-19 21:22\"}', '林', '測試', '', '弟只弟只', '', '弟只', '', '台灣', 206, '花蓮縣', 3154, '', '[]', '銀行轉帳', 'bank_transfer', '林', '測試', '', '弟只弟只', '', '弟只', '', '台灣', 206, '花蓮縣', 3154, '', '[]', '固定運費', 'flat.flat', '', '2855.0000', 0, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '::1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2', '2017-10-23 20:52:58', '2017-10-23 20:52:58'),
+(108, 0, 'INV-2013-00', 0, 'MITTAG', 'http://localhost/mittag2/', 0, 1, 'test', 'test', 'anikiwayne@gmail.com', '0932000181', '', '{\"4\":\"\",\"3\":\"\"}', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '銀行轉帳', 'bank_transfer', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '固定運費', 'flat.flat', '', '2405.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '::1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2', '2017-11-04 17:25:04', '2017-11-04 17:25:06');
 
 -- --------------------------------------------------------
 
@@ -2357,7 +2401,8 @@ INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id
 (74, 102, 1, 0, '', '2017-09-08 20:58:50'),
 (75, 103, 1, 0, '', '2017-09-10 08:36:47'),
 (76, 104, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-09-10 12:00:51'),
-(77, 105, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-09-13 09:12:52');
+(77, 105, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-09-13 09:12:52'),
+(78, 108, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-11-04 17:25:06');
 
 -- --------------------------------------------------------
 
@@ -2549,7 +2594,10 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `extraDetail`, `
 (125, 104, '', '', '', '', '', '', 57, 'firm m  ring 堅毅男戒', 'RG313', 1, '4600.0000', '4600.0000', '0.0000', 0),
 (126, 105, '', '', '', '', '', '', 62, 'knot ring 結戒', 'RG308', 1, '3350.0000', '3350.0000', '0.0000', 0),
 (127, 105, '', '', '', '', '', '', 92, 'ring test 01', 'RG702', 1, '3300.0000', '3300.0000', '0.0000', 0),
-(128, 106, '[]', '請選擇戒圍', '', '', '', '耳針式耳環', 91, 'earring test 01', 'ER777', 1, '3500.0000', '3500.0000', '0.0000', 0);
+(128, 106, '[]', '請選擇戒圍', '', '', '', '耳針式耳環', 91, 'earring test 01', 'ER777', 1, '3500.0000', '3500.0000', '0.0000', 0),
+(129, 107, '', '', '', '', '', '', 68, 'train necklace 火車項鍊', 'NL343', 1, '2850.0000', '2850.0000', '0.0000', 0),
+(130, 107, '', '', '', '', '', '', 81, 'test2', 'test1', 1, '0.0000', '0.0000', '0.0000', 0),
+(131, 108, '[]', '請選擇戒圍', '0', '', '0', '', 69, 'train baby bracelet 火車寶寶手鍊', 'BB307', 1, '2400.0000', '2400.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2922,7 +2970,13 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (273, 105, 'total', '帳單總計', '6655.0000', 9),
 (274, 106, 'sub_total', '商品總計', '3500.0000', 1),
 (275, 106, 'shipping', '固定運費', '5.0000', 3),
-(276, 106, 'total', '帳單總計', '3505.0000', 9);
+(276, 106, 'total', '帳單總計', '3505.0000', 9),
+(277, 107, 'sub_total', '商品總計', '2850.0000', 1),
+(278, 107, 'shipping', '固定運費', '5.0000', 3),
+(279, 107, 'total', '帳單總計', '2855.0000', 9),
+(280, 108, 'sub_total', '商品總計', '2400.0000', 1),
+(281, 108, 'shipping', '固定運費', '5.0000', 3),
+(282, 108, 'total', '帳單總計', '2405.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -2963,7 +3017,7 @@ CREATE TABLE `oc_product` (
   `location` varchar(128) NOT NULL,
   `texture` varchar(255) NOT NULL,
   `deliveringTime` varchar(255) NOT NULL,
-  `deliveringExtra` varchar(255) NOT NULL,
+  `deliveringExtra` text NOT NULL,
   `earingType` varchar(255) NOT NULL,
   `extraDetail` varchar(255) NOT NULL,
   `quantity` int(4) NOT NULL DEFAULT '0',
@@ -2973,22 +3027,22 @@ CREATE TABLE `oc_product` (
   `image` varchar(255) DEFAULT NULL,
   `manufacturer_id` int(11) NOT NULL,
   `shipping` tinyint(1) NOT NULL DEFAULT '1',
-  `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `price` int(15) NOT NULL DEFAULT '0',
   `points` int(8) NOT NULL DEFAULT '0',
   `tax_class_id` int(11) NOT NULL,
-  `braceWidth` int(100) NOT NULL,
-  `braceLong` int(100) NOT NULL,
+  `braceWidth` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `braceLong` decimal(15,2) NOT NULL DEFAULT '0.00',
   `braceSeleLen` varchar(100) NOT NULL,
   `braceletDiameter` varchar(11) NOT NULL,
-  `braceHeight` int(100) NOT NULL,
+  `braceHeight` decimal(15,2) NOT NULL DEFAULT '0.00',
   `necklaceLength` varchar(255) NOT NULL,
   `date_available` date NOT NULL DEFAULT '0000-00-00',
-  `braceNote` varchar(255) NOT NULL,
-  `weight` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `braceNote` text NOT NULL,
+  `weight` decimal(15,2) NOT NULL DEFAULT '0.00',
   `weight_class_id` int(11) NOT NULL DEFAULT '0',
-  `length` decimal(15,8) NOT NULL DEFAULT '0.00000000',
-  `width` decimal(15,8) NOT NULL DEFAULT '0.00000000',
-  `height` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `length` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `width` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `height` decimal(15,2) NOT NULL DEFAULT '0.00',
   `secondaryNote` varchar(255) NOT NULL,
   `length_class_id` int(11) NOT NULL DEFAULT '0',
   `subtract` tinyint(1) NOT NULL DEFAULT '1',
@@ -2997,35 +3051,41 @@ CREATE TABLE `oc_product` (
   `status` tinyint(1) NOT NULL DEFAULT '0',
   `viewed` int(5) NOT NULL DEFAULT '0',
   `date_added` datetime NOT NULL,
-  `date_modified` datetime NOT NULL
+  `date_modified` datetime NOT NULL,
+  `activity_title` varchar(255) NOT NULL,
+  `activity_desc` text NOT NULL,
+  `eng_name` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 資料表的匯出資料 `oc_product`
 --
 
-INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `texture`, `deliveringTime`, `deliveringExtra`, `earingType`, `extraDetail`, `quantity`, `stock_status_id`, `ringSizeStart`, `ringSizeEnd`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `braceWidth`, `braceLong`, `braceSeleLen`, `braceletDiameter`, `braceHeight`, `necklaceLength`, `date_available`, `braceNote`, `weight`, `weight_class_id`, `length`, `width`, `height`, `secondaryNote`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(60, 'RG314', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_6396_ok_pinkoi.jpg', 0, 1, '3000.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-11-22', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 16, '2017-05-08 16:45:42', '2017-05-08 16:56:43'),
-(59, 'RG304', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 0, 6, 0, 0, 'catalog/!IMG_0479_OK-pinkoi.jpg', 0, 1, '4700.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-05-18', '', '100.00000000', 2, '123.00000000', '456.00000000', '789.00000000', '', 2, 1, 1, 1, 1, 7, '2017-05-08 15:54:49', '2017-05-08 15:55:05'),
-(62, 'RG308', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_3999_ok_pinkoi.jpg', 0, 1, '3350.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-09-01', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 9, '2017-05-08 16:55:34', '0000-00-00 00:00:00'),
-(63, 'RG305', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_6807_ok_pinkoi.jpg', 0, 1, '3200.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-07-05', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 12, '2017-05-08 17:03:54', '0000-00-00 00:00:00'),
-(64, 'RG306', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_3889_ok_pinkoi.jpg', 0, 1, '3900.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-08-18', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 15, '2017-05-08 17:14:59', '0000-00-00 00:00:00'),
-(65, 'RG307', '', '', '', '', '', '', '台灣', '925', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_3961_ok_pinkoi.jpg', 0, 1, '3450.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-08-25', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 99, '2017-05-08 17:23:22', '2017-07-16 13:11:45'),
-(66, 'NL336', '', '', '', '', '', '', '台灣', '925', '', '', '', '', 1, 7, 0, 0, 'catalog/IMG_5013.JPG', 0, 1, '3800.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-09-22', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 16, '2017-05-08 17:51:55', '2017-07-22 01:11:01'),
-(67, 'BL313', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_5322_ok_pinkoi.jpg', 0, 1, '2900.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-10-03', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 18, '2017-05-08 18:13:27', '0000-00-00 00:00:00'),
-(68, 'NL343', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_5318_ok_pinkoi.jpg', 0, 1, '2850.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-10-25', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 19, '2017-05-08 18:19:06', '0000-00-00 00:00:00'),
-(69, 'BB307', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 7, 0, 0, 'catalog/!IMG_6028_ok_pinkoi.jpg', 0, 1, '2400.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-11-10', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 0, 1, 1, 1, 12, '2017-05-08 18:24:10', '2017-05-08 18:27:14'),
-(56, 'RG309', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 1, 6, 0, 0, 'catalog/!IMG_4475_ok_yahoo.jpg', 0, 1, '4750.0000', 0, 0, 0, 0, '', '', 0, '', '2013-09-11', '', '25.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 1, 1, 1, 1, 30, '2017-05-08 13:59:31', '2017-09-13 09:39:28'),
-(57, 'RG313', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 0, 6, 0, 0, 'catalog/!IMG_6003_ok_pinkoi.jpg', 0, 1, '4600.0000', 0, 0, 0, 0, '0', '0', 0, '', '2013-11-20', '', '100.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 1, 1, 1, 1, 9, '2017-05-08 14:56:59', '2017-05-08 16:56:26'),
-(58, 'RG401', '', '', '', '', '', '', 'Taiwan', '', '', '', '', '', 0, 6, 0, 0, 'catalog/!IMG_7413_ok_pinkoi.jpg', 0, 1, '2600.0000', 0, 0, 0, 0, '0', '0', 0, '', '2014-01-17', '', '110.00000000', 2, '100.00000000', '100.00000000', '100.00000000', '', 2, 1, 1, 1, 1, 8, '2017-05-08 15:05:21', '2017-05-08 15:21:40'),
-(81, 'test1', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '', '耳夾式耳環', '1234fdsafasdfsad', 1177, 7, 1, 16, 'catalog/!IMG_3384_ok_pinkoi.jpg', 0, 1, '0.0000', 0, 0, 2147483647, 10, '', '', 23, '', '2017-07-29', 'main note', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', '123412342314231432432', 1, 1, 1, 1, 1, 135, '2017-07-29 21:27:35', '2017-09-03 14:52:57'),
-(89, 'test2', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '', '', '', 1234121, 7, 0, 0, '', 0, 1, '0.0000', 0, 0, 0, 0, '', '', 0, '', '2017-08-26', '', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', '', 1, 1, 1, 1, 1, 11, '2017-08-26 13:48:28', '2017-08-26 13:55:16'),
-(92, 'RG702', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '產品皆為收單後手工製作，敬請耐心等待...', '', '1. 備註說明備註說明備註說明備註說明備註說明備註說明備註說明\r\n2. 備註說明備註說明備註說明\r\n3. 備註說明備註說明備註說明備註說明', 0, 7, 1, 18, 'catalog/!IMG_2471_all_ok.jpg', 0, 1, '3300.0000', 0, 0, 1, 0, '', '', 0, '', '2017-09-10', '', '0.00000000', 1, '20.00000000', '20.00000000', '20.00000000', '', 1, 1, 1, 1, 1, 19, '2017-09-10 21:07:46', '2017-09-10 22:02:55'),
-(91, 'ER777', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '產品皆為收單後手工製作，敬請耐心等待...', '耳針式耳環', '', 1, 7, 0, 0, 'catalog/!IMG_2833_all_ok.jpg', 0, 1, '3500.0000', 0, 0, 23, 12, '', '', 34, '', '2017-09-10', '主飾品包含2克拉黑色尖晶石一顆，兩側共為2顆', '0.00000000', 1, '50.00000000', '60.00000000', '70.00000000', '', 1, 1, 1, 1, 1, 12, '2017-09-10 14:58:10', '2017-09-10 16:22:10'),
-(93, 'NL711', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '產品皆為收單後手工製作，敬請耐心等待...', '', '', 1, 7, 0, 0, 'catalog/!IMG_1857_all_ok.jpg', 0, 1, '3150.0000', 0, 0, 2, 1, '', '', 3, '40', '2017-09-10', '', '0.00000000', 1, '1.50000000', '0.90000000', '11.00000000', '', 1, 1, 1, 1, 1, 7, '2017-09-10 22:13:41', '2017-09-13 10:20:18'),
-(94, 'BL701', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '產品皆為收單後手工製作，敬請耐心等待...', '', '', 5, 7, 0, 0, 'catalog/!IMG_2233_all_ok.jpg', 0, 1, '2650.0000', 0, 0, 0, 0, '16', '', 0, '', '2017-09-11', '', '0.00000000', 1, '20.00000000', '20.00000000', '20.00000000', '', 1, 1, 1, 1, 1, 2, '2017-09-11 09:39:52', '2017-09-13 09:40:34'),
-(95, ',uy,o.tio', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間。', '', '', '', 1, 7, 0, 0, 'catalog/mittag act 01.jpg', 0, 1, '0.0000', 0, 0, 0, 0, '', '', 0, '', '2017-09-13', '', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', '', 1, 1, 1, 1, 1, 6, '2017-09-13 09:50:52', '2017-09-13 10:24:12'),
-(96, 'fisher001', '', '', '', '', '', '', 'Taiwan', '925銀', '3天', '', '', '', 1, 7, 3, 9, 'catalog/!IMG_0465_OK-pinkoi.jpg', 0, 1, '0.0000', 0, 0, 0, 0, '', '', 0, '', '2017-09-13', '', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', '', 1, 1, 1, 1, 1, 0, '2017-09-13 09:55:06', '2017-09-13 11:44:57');
+INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `texture`, `deliveringTime`, `deliveringExtra`, `earingType`, `extraDetail`, `quantity`, `stock_status_id`, `ringSizeStart`, `ringSizeEnd`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `braceWidth`, `braceLong`, `braceSeleLen`, `braceletDiameter`, `braceHeight`, `necklaceLength`, `date_available`, `braceNote`, `weight`, `weight_class_id`, `length`, `width`, `height`, `secondaryNote`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`, `activity_title`, `activity_desc`, `eng_name`) VALUES
+(118, 'BR TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '20', '', '33.00', '', '2017-11-20', '                    ', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:50:48', '2017-11-20 13:04:52', '', '', 'BR TEST001'),
+(114, 'NL TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 2123131321, 0, 0, '22.00', '11.00', '', '', '33.00', '40', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:05:22', '0000-00-00 00:00:00', '', '', 'NL TEST001'),
+(98, 'RG705', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 若有其他尺寸上的需求，則需要增加5個工作天&lt;/p&gt;&lt;p&gt;2. 本產品不提供硫化服務&lt;/p&gt;', '', '', 1, 7, 5, 11, 'catalog/Ring(RG)/RG705/RG705 turning ring_轉折戒指_04_S.jpg', 0, 1, 1950, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '                                                            ', '0.00', 1, '2.30', '2.20', '0.30', '', 1, 1, 1, 1, 1, 5, '2017-11-19 11:43:38', '2017-11-19 12:31:23', '', '', 'turning'),
+(99, 'RG704', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 若需其他尺寸則需增加3個工作日&lt;/p&gt;&lt;p&gt;2. 本產品可提供雷射刻字，但需另加收費&lt;/p&gt;', '', '若需其他尺寸，則須依照標準出貨日再增加3天', 1, 7, 0, 12, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_03_S.jpg', 0, 1, 3800, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '2.60', '2.30', '1.10', '', 1, 1, 1, 1, 1, 1, '2017-11-19 13:52:49', '0000-00-00 00:00:00', '', '', 'breakout'),
+(100, 'RG703', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 本產品可提供硫化服務，下單時請提出需求&lt;/p&gt;&lt;p&gt;2. 本產品另有同款項鍊可供選擇&lt;/p&gt;', '', '1. 若需其他尺寸，則需依照一般出貨時間再增加3天', 1, 7, 0, 11, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _02_S.jpg', 0, 1, 2950, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '2.30', '2.20', '0.90', '', 1, 1, 1, 1, 1, 1, '2017-11-19 14:07:47', '0000-00-00 00:00:00', '', '', 'brezel'),
+(101, 'RG702', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;h4&gt;1. 本商品為O型戒指&lt;br&gt;2. 本產品不提供硫化處理&lt;/h4&gt;', '', '1. 若需其他尺寸，則須依照標準供貨時間再增加三天', 1, 7, 0, 13, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_05_S.jpg', 0, 1, 3300, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '2.30', '2.30', '0.40', '', 1, 1, 1, 1, 1, 1, '2017-11-19 14:25:38', '0000-00-00 00:00:00', '', '', 'drip'),
+(102, 'RG701', '', '', '', '', '', '', 'Taiwan', '925銀', '約3個工作天，不包含運送時間', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '1. 本商品為C型戒，若有其他尺寸需求請先詢問再下單...', 1, 7, 0, 18, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_03_S.jpg', 0, 1, 3100, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '3.50', '2.50', '1.50', '', 1, 1, 1, 1, 1, 1, '2017-11-19 16:51:23', '0000-00-00 00:00:00', '', '', 'feather'),
+(103, 'NL720', '', '', '', '', '', '', 'Taiwan', '925銀', '約3個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_01_S.jpg', 0, 1, 2600, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-19', '', '0.00', 1, '1.20', '0.80', '0.50', '', 1, 1, 1, 1, 1, 2, '2017-11-19 17:03:36', '0000-00-00 00:00:00', '', '', 'crown'),
+(104, 'NL719', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_03_S.jpg', 0, 1, 3500, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-19', '                    ', '0.00', 1, '1.30', '0.60', '0.50', '', 1, 1, 1, 1, 1, 1, '2017-11-19 17:10:25', '2017-11-19 17:12:38', '', '', 'eggplant'),
+(105, 'NL718', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL718/NL718 wheat a necklace_麥穗a項鍊_02_S.jpg', 0, 1, 2940, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '', '0.00', 1, '3.20', '1.20', '0.40', '', 1, 1, 1, 1, 1, 0, '2017-11-20 10:49:17', '0000-00-00 00:00:00', '', '', 'wheat a'),
+(106, 'NL717', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_06_S.jpg', 0, 1, 2940, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '3.80', '1.60', '0.40', '', 1, 1, 1, 1, 1, 0, '2017-11-20 10:55:30', '2017-11-20 10:57:44', '', '', 'wheat'),
+(107, 'NL716', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_04_S.jpg', 0, 1, 3550, 0, 0, '0.00', '0.00', '', '', '0.00', '45', '2017-11-20', '                    ', '0.00', 1, '3.10', '1.00', '0.50', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:09:24', '2017-11-20 11:12:54', '', '', 'violin'),
+(108, 'NL715', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_04_S.jpg', 0, 1, 2650, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '', '0.00', 1, '1.20', '1.00', '0.30', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:19:11', '0000-00-00 00:00:00', '', '', 'diamond heart'),
+(109, 'NL714', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_01_S.jpg', 0, 1, 2400, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                                        ', '0.00', 1, '1.30', '0.90', '0.30', '', 1, 1, 1, 1, 1, 4, '2017-11-20 11:24:13', '2017-11-20 14:43:35', '', '', 'elephant'),
+(112, 'NL712', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_04_S.jpg', 0, 1, 3400, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '1.50', '1.30', '0.60', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:44:55', '2017-11-20 11:46:25', '', '', 'duck'),
+(111, 'NL713', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_03_S.jpg', 0, 1, 5500, 0, 0, '0.00', '0.00', '', '', '0.00', '60', '2017-11-20', '', '0.00', 1, '2.30', '2.30', '0.30', '', 1, 1, 1, 1, 1, 1, '2017-11-20 11:34:05', '0000-00-00 00:00:00', '', '', 'Lifebuoy'),
+(113, 'NL711', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 3150, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '1.50', '1.10', '0.90', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:54:50', '2017-11-20 11:56:34', '', '', 'paper rabbit'),
+(117, 'ER TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 2, '2017-11-20 12:44:33', '0000-00-00 00:00:00', '', '', 'ER TEST001'),
+(116, 'RG TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註', 1, 7, 1, 13, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 123445679, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '&lt;ol&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:34:18', '2017-11-20 12:36:52', '', '', 'RG TEST001'),
+(119, 'BR TEST002', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_04_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '6.5', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 12:59:11', '0000-00-00 00:00:00', '', '', 'BR TEST002'),
+(120, 'BB TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 13:04:00', '0000-00-00 00:00:00', '', '', 'BB GIFT TEST001'),
+(121, 'SW TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 13:09:26', '0000-00-00 00:00:00', '', '', 'SW TEST001'),
+(122, 'OTS TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 13:13:02', '0000-00-00 00:00:00', '', '', 'OTS TEST001'),
+(123, 'NL716', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_04_S.jpg', 0, 1, 2750, 0, 0, '0.00', '0.00', '16', '', '0.00', '', '2017-11-20', '', '0.00', 1, '1.90', '1.30', '0.30', '', 1, 1, 1, 1, 1, 3, '2017-11-20 14:58:09', '0000-00-00 00:00:00', '', '', 'crown');
 
 -- --------------------------------------------------------
 
@@ -3062,28 +3122,31 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(57, 1, 'firm m  ring 堅毅男戒', '&lt;p&gt;六邊型是最堅固的結構，&lt;/p&gt;&lt;p&gt;所以我們設計最堅固的firm ring給鋼鐵般意志的你；&lt;/p&gt;&lt;p&gt;永不妥協，永不放棄，永遠只做自己。&lt;br&gt;&lt;/p&gt;', '', 'firm m  ring', '', ''),
-(58, 1, 'typhoon eye ring 颱風眼戒指', '&lt;p&gt;颱風來時，&lt;/p&gt;&lt;p&gt;大家都謹慎的做好各項防颱措施以防範它所帶來的災害，&lt;/p&gt;&lt;p&gt;但是颱風眼區域內通常無狂風亦無暴雨，&lt;/p&gt;&lt;p&gt;天上只有薄薄的雲,還能看見太陽或星星。&lt;/p&gt;&lt;p&gt; 所以，您說說看這是不是最好的護身符呢？&lt;/p&gt;&lt;p&gt;當尾戒也超合適喔...&lt;/p&gt;&lt;p&gt;颱風來時，&lt;/p&gt;&lt;p&gt;大家都謹慎的做好各項防颱措施以防範它所帶來的災害，&lt;/p&gt;&lt;p&gt;但是颱風眼區域內通常無狂風亦無暴雨，&lt;/p&gt;&lt;p&gt;天上只有薄薄的雲,還能看見太陽或星星。&lt;/p&gt;&lt;p&gt;所以，您說說看這是不是最好的護身符呢？&lt;/p&gt;&lt;p&gt;當尾戒也超合適喔...&lt;/p&gt;', '', 'typhoon eye ring', '', ''),
-(59, 1, 'snake drei ring 蜿蜒蛇戒指', '&lt;p&gt;整個戒身都是上下蜿蜒弧度，&lt;/p&gt;&lt;p&gt;加上半霧面半鏡面的表面對比處理，&lt;/p&gt;&lt;p&gt;讓此款充滿張力的設計更增生命力。&lt;br&gt;&lt;/p&gt;', '', 'snake drei ring', '', ''),
-(60, 1, 'firm f ring 堅毅女戒', '&lt;p&gt;六邊型是最堅固的結構，&lt;/p&gt;&lt;p&gt;所以我們設計最堅固的firm ring給鋼鐵般意志的妳；&lt;/p&gt;&lt;p&gt;永不妥協，永不放棄，永遠做自己。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;本款有對戒選項喔~&lt;/p&gt;', '', 'firm f ring', '', ''),
-(62, 1, 'knot ring 結戒', '&lt;p&gt;老實說，knot ring並不是新設計，&lt;/p&gt;&lt;p&gt;只是mittag的米米設計師實在太喜歡戴它了，&lt;/p&gt;&lt;p&gt;總是焦不離孟，孟不離焦的出席各種場合...&lt;/p&gt;&lt;p&gt;既然這麼喜歡，當然不能獨享，&lt;/p&gt;&lt;p&gt;邀請大夥來發覺knot ring令人迷戀的原因~&lt;br&gt;&lt;/p&gt;', '', 'knot ring', '', ''),
-(63, 1, 'donuts ring 甜甜圈戒指', '&lt;p&gt;這麼sweet的東西怎麼可以獨享呢！&lt;/p&gt;&lt;p&gt;當然要把它戴出門跟大夥一同分享囉~&lt;/p&gt;&lt;p&gt;甜甜圈戒指在打樣試戴階段就受到許多注目禮與詢問，&lt;/p&gt;&lt;p&gt; 每一個甜甜圈出門前都經過非常繁複的工序才會到您手上喔…&lt;br&gt;&lt;/p&gt;', '', 'donuts ring', '', ''),
-(64, 1, 'super ring 超能戒指', '&lt;p&gt;戴上Super ring就感覺像超人一樣擁有無限可能！&lt;/p&gt;&lt;p&gt;簡約的設計讓男生或女生都可以輕易的super super喔~&lt;br&gt;&lt;/p&gt;', '', 'super ring', '', ''),
-(65, 1, '指紋戒指 finger print ring ', '&lt;p&gt;指紋的獨一無二代表每個獨特的個體，&lt;/p&gt;&lt;p&gt;請舉起你的手與我們一同宣示：&lt;/p&gt;&lt;p&gt;“我，獨一無二！我,無可取代！&quot;&lt;br&gt;&lt;/p&gt;', '', 'finger print ring', '', ''),
-(66, 1, '指紋項鍊 finger print necklace', '&lt;p&gt;指紋的獨一無二代表每個獨特的個體，&lt;/p&gt;&lt;p&gt;請挺起胸與我們一同宣示，&lt;/p&gt;&lt;p&gt;&quot;我，獨一無二！我，無可取代！&quot;&lt;br&gt;&lt;/p&gt;', '', 'finger print necklace', '', ''),
-(67, 1, 'train bracelet 火車手鍊', '&lt;p&gt;童年，&lt;span style=&quot;font-size: 12px;&quot;&gt;快樂那麼垂手可得，&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;手裡一部小火材盒汽車就可以環遊世界；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;長大了，環遊世界的夢想還存在嗎？ &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;喚醒你的夢想，&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;環遊世界從環島開始，&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;和我們一起搭上環島火車，先好好走遍自家土地，&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;就會發現台灣，其實很美！&lt;/span&gt;&lt;/p&gt;', '', 'train bracelet', '', ''),
-(68, 1, 'train necklace 火車項鍊', '&lt;p&gt;童年，快樂那麼垂手可得，&lt;/p&gt;&lt;p&gt;手裡一部火柴盒小汽車就可以環遊世界；&lt;/p&gt;&lt;p&gt;長大了，環遊世界的夢想還存在嗎？ &lt;/p&gt;&lt;p&gt;喚醒你的夢想，環遊世界從環島開始，&lt;/p&gt;&lt;p&gt;和我們一起搭上環島火車，先好好走遍自家土地，&lt;/p&gt;&lt;p&gt;會發現台灣，其實很美！&lt;br&gt;&lt;/p&gt;', '', 'train necklace', '', ''),
-(69, 1, 'train baby bracelet 火車寶寶手鍊', '&lt;p&gt;&amp;nbsp;童年，快樂那麼垂手可得，&lt;/p&gt;&lt;p&gt;手裡一部小火材盒汽車就可以環遊世界；&lt;/p&gt;&lt;p&gt;長大了，環遊世界的夢想還存在嗎？&lt;/p&gt;&lt;p&gt;幫寶貝戴上追逐夢想的火車寶寶手鍊，&lt;/p&gt;&lt;p&gt;一起搭上環遊世界的夢想列車吧！&lt;br&gt;&lt;/p&gt;', '', 'train baby bracelet', '', ''),
-(56, 1, 'chasing ice ring 逐冰戒指', '&lt;p&gt;氣溫又升高,夏末秋初如何消暑呢?&lt;/p&gt;&lt;p&gt;戴上chasing ice來一趟逐冰之旅為自己降溫一下吧! &lt;/p&gt;&lt;p&gt;不規則的多角切面設計,讓您怎麼轉都bling bling!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://jungwei.com.tw/mittag.com.tw/image/catalog/RG309商品說明表.jpg&quot; style=&quot;width: 750px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', 'chasing ice ring', '', ''),
-(81, 1, 'test2', '', '', '1234', '', ''),
+(106, 1, '麥穗項鍊', '&lt;h4&gt;人生猶如行走在一片漫無邊際的麥田裡,&lt;br&gt;每個人都在尋找最大的麥穗,&lt;br&gt;但只有把手裡麥穗握緊,&lt;br&gt;才是最珍惜當下的做法.&lt;/h4&gt;', '', 'mittagNL717', '', ''),
+(107, 1, '小提琴項鍊', '&lt;h4&gt;不僅外形優美,&lt;br&gt;還有極具穿透力的動人音色.&lt;br&gt;內外皆具不愧是樂器中的女王.&lt;/h4&gt;', '', 'mittagNL716', '', ''),
+(108, 1, '鑽石心項鍊', '&lt;h4&gt;鑽石般的俐落切割,&lt;br&gt;讓這顆愛心簡潔到一句多餘的話都沒有.&lt;/h4&gt;', '', 'mittagNL715', '', ''),
+(112, 1, '鴨子項鍊', '&lt;h4&gt;渾圓的鴨子有著穩重的安心感,&lt;br&gt;穩定而毫不猶豫的往自己的目標前進.&lt;/h4&gt;', '', 'mittagNL712', '', ''),
+(111, 1, '救生圈項鍊', '&lt;h4&gt;有時候胸口悶得慌,&lt;br&gt;覺得自己就要淹沒了,&lt;br&gt;無助的伸手想要抓住救生圈?&lt;br&gt; 每個人都需要一個情感的出口,&lt;br&gt;才不會讓過於沉重的情緒淹沒自己…&lt;/h4&gt;', '', 'mittagNL713', '', ''),
+(113, 1, '捲紙兔項鍊', '&lt;h4&gt;童趣的捲紙裁剪出長長的耳朵,&lt;br&gt;兔子的身影一躍而出…&lt;/h4&gt;', '', 'mittagNL711', '', ''),
+(114, 1, '項鍊測試全資料填寫', '&lt;p&gt;產品文案第一行產品文案第一行產品文案第一行&lt;/p&gt;&lt;p&gt;產品文案第二行產品文案第二行產品文案第二行產品文案第二行&lt;/p&gt;&lt;p&gt;產品文案第三行產品文案第三行&lt;/p&gt;&lt;p&gt;產品文案第四行產品文案第四行產品文案第四行產品文案第四行產品文案第四行&lt;/p&gt;&lt;p&gt;產品文案第五行產品文案第五行產品文案第五行&lt;/p&gt;&lt;p&gt;產品文案第六行產品文案第六行產品文案第六行產品文案第六行&lt;/p&gt;&lt;p&gt;產品文案第七行產品文案第七行&lt;/p&gt;&lt;p&gt;產品文案第八行產品文案第八行產品文案第八行產品文案第八行產品文案第八行&lt;/p&gt;&lt;p&gt;產品文案第九行產品文案第九行產品文案第九行產品文案第九行&lt;br&gt;&lt;/p&gt;', '', 'mittag項鍊測試全資料填寫', '', ''),
+(98, 1, '轉折戒指', '&lt;h4&gt;走在人生路上,不經意的遇上了誰,&lt;/h4&gt;&lt;h4&gt;讀了某本書,轉了哪個路口,&lt;/h4&gt;&lt;h4&gt;整個人生的劇本就跟著改寫. &lt;/h4&gt;&lt;h4&gt;戴上轉折戒指,帶上改變的勇氣,&lt;/h4&gt;&lt;h4&gt;勇敢寫下自己的劇本.&lt;/h4&gt;', '', 'mittag轉折戒指', '', ''),
+(99, 1, '突破戒指', '&lt;h4&gt;整體內凹的設計,&lt;br&gt;卻在其中一邊轉為外凸,&lt;br&gt;提醒自己不要安逸於舒適圈,要勇於突破.&lt;/h4&gt;', '', 'mittagRG704', '', ''),
+(100, 1, '德國結戒指', '&lt;h4&gt;就像祈禱時雙手交叉的樣子,&lt;br&gt;德國結麵包有著充滿想像的樣貌.&lt;br&gt;中間打個結讓彼此牢牢繫住,&lt;br&gt;從此愛情與麵包再也不分離…&lt;/h4&gt;', '', 'mittagRG703', '', ''),
+(101, 1, '滴水戒指', '&lt;p&gt;滴水穿石是這個戒指的主要設計概念. &lt;/p&gt;&lt;p&gt;只要有恆心不斷努力,&lt;/p&gt;&lt;p&gt;再困難的事都一定能完成...&lt;br&gt;&lt;/p&gt;', '', 'mittagRG702', '', ''),
+(102, 1, '羽毛戒指', '&lt;h4&gt;一邊是羽毛濃密排列的紋路,&lt;br&gt;一邊是光可鑑人的鏡面處理,&lt;br&gt;衝突的對比,讓人想移開視線都難..&amp;nbsp;&lt;/h4&gt;', '', 'mittagRG701', '', ''),
+(103, 1, '王冠項鍊', '&lt;p&gt;&amp;nbsp;王冠是客戶和我們一起設計出來的作品;&lt;/p&gt;&lt;p&gt;&quot;戴上冠冕,保持信心,專心致志,預備好自己!&quot;&lt;/p&gt;&lt;p&gt;是客戶與我們分享的註解;&lt;/p&gt;&lt;p&gt;感恩的心情與大家共享~&lt;br&gt;&lt;/p&gt;', '', 'mittagNL720', '', ''),
+(104, 1, '茄子項鍊', '&lt;p&gt;茄子的日文(なす),&lt;/p&gt;&lt;p&gt;發音和達成(成す)相似.&lt;/p&gt;&lt;p&gt;所以茄子象徵著願望與理想的實現.&lt;/p&gt;&lt;p&gt;無論是健康,&lt;/p&gt;&lt;p&gt;快樂還是財富,&lt;/p&gt;&lt;p&gt;立馬許自己一顆茄子吧!&lt;br&gt;&lt;/p&gt;', '', 'mittagNL719', '', ''),
+(105, 1, '麥穗a項鍊', '&lt;h4&gt;人生猶如行走在一片漫無邊際的麥田裡,&lt;br&gt;每個人都在尋找最大的麥穗,&lt;br&gt;但只有把手裡麥穗握緊,&lt;br&gt;才是最珍惜當下的做法...&lt;/h4&gt;', '', 'mittagNL718', '', ''),
 (87, 1, '41111111111111111111111', '', '', '11111111111', '', ''),
-(89, 1, 'test2', '', '', 'test2', '', ''),
-(91, 1, 'earring test 01', 'earring test 01 說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明earring test 01 說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明earring test 01 說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明earring test 01 說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明', '', 'earring test 01', '', ''),
-(92, 1, 'ring test 01', '&lt;p&gt;產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明&lt;/p&gt;&lt;p&gt;產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明&lt;br&gt;&lt;/p&gt;', '', 'ring test 01', '', ''),
-(93, 1, 'necklace test 01', '&lt;p&gt;童趣的捲紙裁剪出長長的耳朵，兔子的身影一躍而出…&lt;br&gt;&lt;/p&gt;', '', 'NL711', '', ''),
-(94, 1, 'bracelet test 01', '&lt;p&gt;帶上方心請放心; 我的芳心只屬於你…帶上方心請放心; 我的芳心只屬於你…帶上方心請放心; 我的芳心只屬於你…&lt;/p&gt;&lt;p&gt;帶上方心請放心; 我的芳心只屬於你…帶上方心請放心; 我的芳心只屬於你…&lt;/p&gt;&lt;p&gt;帶上方心請放心; 我的芳心只屬於你…帶上方心請放心; 我的芳心只屬於你…帶上方心請放心; 我的芳心只屬於你…&lt;br&gt;&lt;/p&gt;', '', 'bracelet test 01', '', ''),
-(95, 1, 'mmhggy', '&lt;p&gt;heutei&lt;/p&gt;', '', 'mmmhdu,.oo', 'sumdt,', ''),
-(96, 1, 'fisher ring', '&lt;p&gt;fisher001&lt;/p&gt;', '', 'fisher ring', '', '');
+(118, 1, '手鍊全文案填寫測試', '&lt;p&gt;項鍊產品文案填寫一項鍊產品文案填寫一項鍊產品文案填寫一項鍊產品文案填寫一&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫二項鍊產品文案填寫二項鍊產品文案填寫二項鍊產品文案填寫二項鍊產品文案填寫二&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫三項鍊產品文案填寫三項鍊產品文案填寫三項鍊產品文案填寫三&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫四項鍊產品文案填寫四項鍊產品文案填寫四&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫五項鍊產品文案填寫五項鍊產品文案填寫五項鍊產品文案填寫五項鍊產品文案填寫五&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫六項鍊產品文案填寫六項鍊產品文案填寫六項鍊產品文案填寫六項鍊產品文案填寫六項鍊產品文案填寫六&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫七項鍊產品文案填寫七項鍊產品文案填寫七項鍊產品文案填寫七&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫八項鍊產品文案填寫八項鍊產品文案填寫八項鍊產品文案填寫八項鍊產品文案填寫八&lt;/p&gt;&lt;p&gt;項鍊產品文案填寫九項鍊產品文案填寫九項鍊產品文案填寫九&lt;br&gt;&lt;/p&gt;', '', 'mittag/BR/TEST001', '', ''),
+(119, 1, '手環全資料填寫測試', '&lt;p&gt;產品文案1產品文案1產品文案1產品文案1產品文案1產品文案1產品文案1&lt;/p&gt;&lt;p&gt;產品文案2產品文案2產品文案2產品文案2產品文案2&lt;/p&gt;&lt;p&gt;產品文案3產品文案3產品文案3產品文案3產品文案3產品文案3產品文案3產品文案3&lt;/p&gt;&lt;p&gt;產品文案4產品文案4產品文案4產品文案4產品文案4產品文案4產品文案4&lt;/p&gt;&lt;p&gt;產品文案5產品文案5產品文案5產品文案5產品文案5產品文案5&lt;/p&gt;&lt;p&gt;產品文案6產品文案6產品文案6產品文案6產品文案6產品文案6產品文案6產品文案6產品文案6&lt;/p&gt;&lt;p&gt;產品文案7產品文案7產品文案7產品文案7產品文案7&lt;/p&gt;&lt;p&gt;產品文案8產品文案8產品文案8產品文案8產品文案8產品文案8產品文案8&lt;/p&gt;&lt;p&gt;產品文案9產品文案9產品文案9產品文案9產品文案9產品文案9產品文案9產品文案9產品文案9產品文案9&lt;br&gt;&lt;/p&gt;', '', 'mittag/BR/TEST002', '', ''),
+(116, 1, '戒指測試全資料填寫', '&lt;p&gt;產品說明文案一產品說明文案一產品說明文案一&lt;/p&gt;&lt;p&gt;產品說明文案二產品說明文案二產品說明文案二產品說明文案二&lt;/p&gt;&lt;p&gt;產品說明文案三產品說明文案三產品說明文案三產品說明文案三產品說明文案三&lt;/p&gt;&lt;p&gt;產品說明文案四產品說明文案四產品說明文案四&lt;/p&gt;&lt;p&gt;產品說明文案五產品說明文案五產品說明文案五產品說明文案五&lt;/p&gt;&lt;p&gt;產品說明文案六產品說明文案六產品說明文案六產品說明文案六產品說明文案六&lt;/p&gt;&lt;p&gt;產品說明文案七產品說明文案七產品說明文案七&lt;/p&gt;&lt;p&gt;產品說明文案八產品說明文案八產品說明文案八產品說明文案八&lt;/p&gt;&lt;p&gt;產品說明文案九產品說明文案九&lt;br&gt;&lt;/p&gt;', '', 'mittagRG/TEST001', '', ''),
+(117, 1, '耳環全文案填寫測試', '&lt;p&gt;耳環產品文案測試一耳環產品文案測試一耳環產品文案測試一&lt;/p&gt;&lt;p&gt;耳環產品文案測試二耳環產品文案測試二耳環產品文案測試二耳環產品文案測試二&lt;/p&gt;&lt;p&gt;耳環產品文案測試三耳環產品文案測試三耳環產品文案測試三耳環產品文案測試三耳環產品文案測試三&lt;/p&gt;&lt;p&gt;耳環產品文案測試四耳環產品文案測試四耳環產品文案測試四&lt;/p&gt;&lt;p&gt;耳環產品文案測試五耳環產品文案測試五耳環產品文案測試五耳環產品文案測試五&lt;/p&gt;&lt;p&gt;耳環產品文案測試六耳環產品文案測試六耳環產品文案測試六耳環產品文案測試六耳環產品文案測試六耳環產品文案測試六&lt;/p&gt;&lt;p&gt;耳環產品文案測試七耳環產品文案測試七耳環產品文案測試七&lt;/p&gt;&lt;p&gt;耳環產品文案測試八耳環產品文案測試八耳環產品文案測試八耳環產品文案測試八耳環產品文案測試八&lt;/p&gt;&lt;p&gt;耳環產品文案測試九耳環產品文案測試九耳環產品文案測試九耳環產品文案測試九&lt;br&gt;&lt;/p&gt;', '', 'mittag/ER/TEST001', '', ''),
+(120, 1, '彌月禮全資料測試', '&lt;p&gt;文案1111111111111111111111111111111111111111111&lt;/p&gt;&lt;p&gt;22222222222222222222222222222222222222222222222222222222222222&lt;/p&gt;&lt;p&gt;33333333333333333333333333333333&lt;/p&gt;&lt;p&gt;444444444444444444444444444444444444444444444444&lt;/p&gt;&lt;p&gt;55555555555555555555555555555555555555555555555&lt;/p&gt;&lt;p&gt;66666666666666666666&lt;/p&gt;&lt;p&gt;777777777777777777777777777777777777777&lt;/p&gt;&lt;p&gt;88888888888888888888888888888888888888888888888&lt;/p&gt;&lt;p&gt;9999999999999999999999999999999999999999999999999999999999&lt;/p&gt;', '', 'mittag/BB/TEST001', '', ''),
+(121, 1, '銀器全文案填寫測試', '&lt;p&gt;文案說明111111111111111111111111111111&lt;/p&gt;&lt;p&gt;22222222222222222222222222222222222222222222222&lt;/p&gt;&lt;p&gt;33333333333333333333333&lt;/p&gt;&lt;p&gt;44444444444444444444444444444444444444444444444444444444&lt;/p&gt;&lt;p&gt;55555555555555555555555555555555555&lt;/p&gt;&lt;p&gt;666666666666666666666666666666666666666666666666666666666666666&lt;/p&gt;&lt;p&gt;7777777777777777777777777777777777777777777&lt;/p&gt;&lt;p&gt;88888888888888888888888888888&lt;/p&gt;&lt;p&gt;99999999999999999999999999999999999999999999999999&lt;/p&gt;', '', 'mittag/SW/TEST001', '', ''),
+(122, 1, '其他類產品', '&lt;p&gt;文案說明1111111111111111111111111111111111111111&lt;/p&gt;&lt;p&gt;22222222222222222222222222222222&lt;/p&gt;&lt;p&gt;333333333333333333333333333333333333333&lt;/p&gt;&lt;p&gt;444444444444444444444444&lt;/p&gt;&lt;p&gt;555555555555555555555555555555555&lt;/p&gt;&lt;p&gt;66666666666666666666666666666666666666666666666&lt;/p&gt;&lt;p&gt;7777777777777777777777777777&lt;/p&gt;&lt;p&gt;88888888888888888888888888888888888888888&lt;/p&gt;&lt;p&gt;99999999999999999999999999999999999&lt;/p&gt;', '', 'mittag/OTS/TEST001', '', ''),
+(109, 1, '大象項鍊', '&lt;h4&gt;大象忠厚溫順是我們最穩重的靠山,&lt;br&gt;默默守護著我們獲得幸運和成功.&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://www.mittag.com.tw/image/catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg&quot; style=&quot;width: 838px;&quot;&gt;&lt;br&gt;&lt;/p&gt;', '', 'mittagNL714', '', ''),
+(123, 1, '王冠手鍊', '&lt;h4&gt;王冠賦予了權利和統治權,&lt;br&gt;象徵著自我控制權,&lt;br&gt;以及勇於為自己的一切負責的決心.&lt;/h4&gt;', '', 'mittagBL716', '', '');
 
 -- --------------------------------------------------------
 
@@ -3131,71 +3194,91 @@ CREATE TABLE `oc_product_image` (
 --
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2490, 69, 'catalog/!IMG_6081_ok_pinkoi.jpg', 2),
-(2483, 67, 'catalog/!IMG_5322_ok_pinkoi.jpg', 0),
-(2484, 67, 'catalog/!IMG_5358_ok_pinkoi.jpg', 0),
-(2485, 67, 'catalog/!IMG_5363_ok_pinkoi.jpg', 0),
-(2486, 67, 'catalog/IMG_5352.JPG', 0),
-(2487, 68, 'catalog/!IMG_5318_ok_pinkoi.jpg', 1),
-(2488, 68, 'catalog/!IMG_4898_ok_pinkoi.jpg', 2),
-(2463, 57, 'catalog/!IMG_5766_ok.jpg', 3),
-(2462, 57, 'catalog/!IMG_5762_ok_pinkoi.jpg', 2),
-(2461, 57, 'catalog/!IMG_6003_ok_pinkoi.jpg', 1),
-(2623, 56, 'catalog/!IMG_4305_ok_pinkoi.jpg', 3),
-(2622, 56, 'catalog/!IMG_4237_ok_pinkoi.jpg', 2),
-(2621, 56, 'catalog/!IMG_4475_ok_yahoo.jpg', 1),
-(2489, 69, 'catalog/!IMG_6028_ok_pinkoi.jpg', 1),
-(2437, 58, 'catalog/!IMG_7413_ok_pinkoi.jpg', 1),
-(2438, 58, 'catalog/!IMG_7397_ok_ok_pinkoi.jpg', 2),
-(2439, 58, 'catalog/IMG_7605_ok_pinkoi.jpg', 3),
-(2440, 58, 'catalog/IMG_7585_ok_pinkoi.jpg', 4),
-(2567, 66, 'catalog/IMG_5037.JPG', 4),
-(2564, 66, 'catalog/!IMG_5034_ok_pinkoi.jpg', 1),
-(2445, 59, 'catalog/!IMG_0479_OK-pinkoi.jpg', 0),
-(2446, 59, 'catalog/!IMG_0465_OK-pinkoi.jpg', 0),
-(2447, 59, 'catalog/!IMG_6910_ok_pinkoi.jpg', 0),
-(2448, 59, 'catalog/!IMG_6919_ok_pinkoi.jpg', 0),
-(2469, 63, 'catalog/!IMG_6809_ok_pinkoi.jpg', 0),
-(2468, 63, 'catalog/!IMG_6807_ok_pinkoi.jpg', 0),
-(2464, 60, 'catalog/!IMG_6093_ok_pinkoi.jpg', 0),
-(2465, 60, 'catalog/!IMG_6003_ok_pinkoi.jpg', 0),
-(2466, 60, 'catalog/!IMG_6003_ok_pinkoi.jpg', 0),
-(2467, 63, 'catalog/!IMG_2245_ok_pinkoi.jpg', 0),
-(2458, 62, 'catalog/!IMG_3550_ok_pinkoi.jpg', 0),
-(2459, 62, 'catalog/!IMG_3999_ok_pinkoi.jpg', 0),
-(2460, 62, 'catalog/!IMG_3995_ok_pinkoi.jpg', 0),
-(2470, 64, 'catalog/!IMG_3540_ok_pinkoi.jpg', 2),
-(2471, 64, 'catalog/!IMG_3889_ok_pinkoi.jpg', 1),
-(2472, 64, 'catalog/!IMG_3502_ok_pinkoi.jpg', 4),
-(2473, 64, 'catalog/!IMG_3989_ok_pinkoi.jpg', 3),
-(2559, 65, 'catalog/!IMG_3958_ok_pinkoi.jpg', 5),
-(2558, 65, 'catalog/IMAG2886.jpg', 4),
-(2557, 65, 'catalog/!IMG_3952_ok_pinkoi.jpg', 3),
-(2556, 65, 'catalog/!IMG_3384_ok_pinkoi.jpg', 2),
-(2491, 69, 'catalog/!IMG_6048_ok_pinkoi.jpg', 3),
-(2492, 69, 'catalog/!IMG_6053_ok_pinkoi.jpg', 4),
-(2566, 66, 'catalog/!IMG_5022_ok_pinkoi.jpg', 3),
-(2565, 66, 'catalog/IMG_5013.JPG', 2),
-(2555, 65, 'catalog/!IMG_3961_ok_pinkoi.jpg', 1),
-(2573, 91, 'catalog/!IMG_2844_all_ok.jpg', 0),
-(2572, 91, 'catalog/!IMG_2833_all_ok.jpg', 0),
-(2609, 92, 'catalog/!IMG_2585_all_ok.jpg', 6),
-(2608, 92, 'catalog/!IMG_2475_all_ok.jpg', 5),
-(2607, 92, 'catalog/!IMG_2583_all_ok.jpg', 4),
-(2606, 92, 'catalog/!IMG_2466_all_ok.jpg', 3),
-(2605, 92, 'catalog/!IMG_2577_all_ok.jpg', 2),
-(2604, 92, 'catalog/!IMG_2471_all_ok.jpg', 1),
-(2646, 93, 'catalog/IMG_1858_all_ok.jpg', 5),
-(2645, 93, 'catalog/!IMG_2207_all_ok.jpg', 4),
-(2644, 93, 'catalog/IMG_1854_all_ok.jpg', 3),
-(2643, 93, 'catalog/!IMG_2191_all_ok.jpg', 2),
-(2642, 93, 'catalog/!IMG_1857_all_ok.jpg', 1),
-(2641, 94, 'catalog/!IMG_2233_all_ok.jpg', 6),
-(2640, 94, 'catalog/!IMG_2089_all_ok.jpg', 5),
-(2639, 94, 'catalog/!IMG_2236_all_ok.jpg', 4),
-(2638, 94, 'catalog/!IMG_2092_all_ok.jpg', 3),
-(2637, 94, 'catalog/!IMG_2245_all_ok.jpg', 2),
-(2636, 94, 'catalog/!IMG_2094_all_ok.jpg', 1);
+(2824, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_05_S.jpg', 4),
+(2823, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_02_S.jpg', 3),
+(2822, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_04_S.jpg', 2),
+(2821, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_01_S.jpg', 1),
+(2820, 100, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _01_S.jpg', 4),
+(2833, 103, 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_02_S.jpg', 0),
+(2836, 104, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_01_S.jpg', 0),
+(2819, 100, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _04_S.jpg', 3),
+(2818, 100, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _02_S.jpg', 2),
+(2815, 99, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_02_S.jpg', 0),
+(2814, 99, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_04_S.jpg', 0),
+(2828, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_04_S.jpg', 0),
+(2827, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0),
+(2835, 103, 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_03_S.jpg', 0),
+(2834, 103, 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_01_S.jpg', 0),
+(2832, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_06_S.jpg', 0),
+(2826, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_06_S.jpg', 6),
+(2825, 101, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_03_S.jpg', 5),
+(2817, 100, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _03_S.jpg', 1),
+(2816, 99, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_05_S.jpg', 0),
+(2811, 98, 'catalog/Ring(RG)/RG705/RG705 turning ring_轉折戒指_03_S.jpg', 0),
+(2813, 99, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_01_S.jpg', 0),
+(2812, 98, 'catalog/Ring(RG)/RG705/RG705 turning ring_轉折戒指_01_S.jpg', 0),
+(2829, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_02_S.jpg', 0),
+(2831, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_03_S.jpg', 0),
+(2830, 102, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_05_S.jpg', 0),
+(2837, 104, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_04_S.jpg', 0),
+(2838, 104, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_02_S.jpg', 0),
+(2839, 104, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_05_S.jpg', 0),
+(2840, 104, 'catalog/Necklace(NL)/NL719/NL719 eggplant necklace_茄子項鍊_03_S.jpg', 0),
+(2841, 105, 'catalog/Necklace(NL)/NL718/NL718 wheat a necklace_麥穗a項鍊_04_S.jpg', 0),
+(2842, 105, 'catalog/Necklace(NL)/NL718/NL718 wheat a necklace_麥穗a項鍊_01_S.jpg', 0),
+(2843, 105, 'catalog/Necklace(NL)/NL718/NL718 wheat a necklace_麥穗a項鍊_03_S.jpg', 0),
+(2844, 105, 'catalog/Necklace(NL)/NL718/NL718 wheat a necklace_麥穗a項鍊_02_S.jpg', 0),
+(2849, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_02_S.jpg', 0),
+(2848, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_04_S.jpg', 0),
+(2850, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_03_S.jpg', 0),
+(2851, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_05_S.jpg', 0),
+(2852, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_01_S.jpg', 0),
+(2853, 106, 'catalog/Necklace(NL)/NL717/NL717 wheat necklace_麥穗項鍊_06_S.jpg', 0),
+(2855, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_01_S.jpg', 0),
+(2856, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_05_S.jpg', 0),
+(2857, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_03_S.jpg', 0),
+(2858, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_06_S.jpg', 0),
+(2859, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_02_S.jpg', 0),
+(2860, 107, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_04_S.jpg', 0),
+(2861, 108, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_02_S.jpg', 0),
+(2862, 108, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_05_S.jpg', 0),
+(2863, 108, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_03_S.jpg', 0),
+(2864, 108, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_01_S.jpg', 0),
+(2865, 108, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_04_S.jpg', 0),
+(2912, 109, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_03_S.jpg', 0),
+(2911, 109, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_02_S.jpg', 0),
+(2910, 109, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_04_S.jpg', 0),
+(2909, 109, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_01_S.jpg', 0),
+(2888, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_03_S.jpg', 0),
+(2887, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_07_S.jpg', 0),
+(2886, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_04_S.jpg', 0),
+(2885, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_01_S.jpg', 0),
+(2884, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_02_S.jpg', 0),
+(2875, 111, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_04_S.jpg', 0),
+(2876, 111, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_02_S.jpg', 0),
+(2877, 111, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_03_S.jpg', 0),
+(2878, 111, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_05_S.jpg', 0),
+(2879, 111, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_01_S.jpg', 0),
+(2889, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_06_S.jpg', 0),
+(2890, 112, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_05_S.jpg', 0),
+(2891, 113, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_04_S.jpg', 0),
+(2892, 113, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_02_S.jpg', 0),
+(2893, 113, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_05_S.jpg', 0),
+(2894, 113, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_03_S.jpg', 0),
+(2895, 113, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0),
+(2896, 114, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_02_S.jpg', 0),
+(2897, 114, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_03_S.jpg', 0),
+(2898, 116, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_04_S.jpg', 0),
+(2899, 117, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_02_S.jpg', 0),
+(2900, 119, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_02_S.jpg', 0),
+(2901, 120, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_04_S.jpg', 0),
+(2902, 118, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_04_S.jpg', 0),
+(2903, 121, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_05_S.jpg', 0),
+(2904, 122, 'catalog/Necklace(NL)/NL720/NL720 crown necklace_王冠項鍊_02_S.jpg', 0),
+(2913, 123, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_01_S.jpg', 0),
+(2914, 123, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_03_S.jpg', 0),
+(2915, 123, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_02_S.jpg', 0),
+(2916, 123, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_04_S.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -3256,22 +3339,6 @@ CREATE TABLE `oc_product_related` (
   `related_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- 資料表的匯出資料 `oc_product_related`
---
-
-INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(57, 60),
-(60, 57),
-(65, 66),
-(66, 65),
-(67, 68),
-(67, 69),
-(68, 67),
-(68, 69),
-(69, 67),
-(69, 68);
-
 -- --------------------------------------------------------
 
 --
@@ -3317,26 +3384,30 @@ CREATE TABLE `oc_product_to_category` (
 --
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(56, 25),
-(57, 25),
-(58, 25),
-(59, 25),
-(60, 25),
-(62, 25),
-(63, 25),
-(64, 25),
-(65, 25),
-(66, 18),
-(67, 17),
-(68, 18),
-(69, 24),
-(81, 17),
-(89, 17),
-(91, 20),
-(92, 25),
-(93, 18),
-(94, 17),
-(95, 60);
+(98, 25),
+(99, 25),
+(100, 25),
+(101, 25),
+(102, 25),
+(103, 18),
+(104, 18),
+(105, 18),
+(106, 18),
+(107, 18),
+(108, 18),
+(109, 18),
+(111, 18),
+(112, 18),
+(113, 18),
+(114, 18),
+(116, 25),
+(117, 20),
+(118, 17),
+(119, 17),
+(120, 24),
+(121, 33),
+(122, 34),
+(123, 17);
 
 -- --------------------------------------------------------
 
@@ -3366,28 +3437,31 @@ CREATE TABLE `oc_product_to_layout` (
 --
 
 INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES
-(64, 0, 0),
-(62, 0, 0),
-(63, 0, 0),
-(59, 0, 0),
-(60, 0, 0),
-(65, 0, 0),
-(66, 0, 0),
-(56, 0, 0),
-(57, 0, 0),
-(58, 0, 0),
-(67, 0, 0),
-(68, 0, 0),
-(69, 0, 0),
+(106, 0, 0),
+(111, 0, 0),
+(118, 0, 0),
+(107, 0, 0),
+(117, 0, 0),
+(99, 0, 0),
+(98, 0, 0),
+(119, 0, 0),
+(114, 0, 0),
+(100, 0, 0),
+(102, 0, 0),
+(101, 0, 0),
+(103, 0, 0),
 (87, 0, 0),
-(81, 0, 0),
-(89, 0, 0),
-(92, 0, 0),
-(91, 0, 0),
-(93, 0, 0),
-(94, 0, 0),
-(95, 0, 0),
-(96, 0, 0);
+(105, 0, 0),
+(104, 0, 0),
+(108, 0, 0),
+(116, 0, 0),
+(109, 0, 0),
+(120, 0, 0),
+(112, 0, 0),
+(113, 0, 0),
+(121, 0, 0),
+(122, 0, 0),
+(123, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3405,28 +3479,31 @@ CREATE TABLE `oc_product_to_store` (
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(56, 0),
-(57, 0),
-(58, 0),
-(59, 0),
-(60, 0),
-(62, 0),
-(63, 0),
-(64, 0),
-(65, 0),
-(66, 0),
-(67, 0),
-(68, 0),
-(69, 0),
-(81, 0),
 (87, 0),
-(89, 0),
-(91, 0),
-(92, 0),
-(93, 0),
-(94, 0),
-(95, 0),
-(96, 0);
+(98, 0),
+(99, 0),
+(100, 0),
+(101, 0),
+(102, 0),
+(103, 0),
+(104, 0),
+(105, 0),
+(106, 0),
+(107, 0),
+(108, 0),
+(109, 0),
+(111, 0),
+(112, 0),
+(113, 0),
+(114, 0),
+(116, 0),
+(117, 0),
+(118, 0),
+(119, 0),
+(120, 0),
+(121, 0),
+(122, 0),
+(123, 0);
 
 -- --------------------------------------------------------
 
@@ -3596,6 +3673,14 @@ CREATE TABLE `oc_review` (
   `date_modified` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 資料表的匯出資料 `oc_review`
+--
+
+INSERT INTO `oc_review` (`review_id`, `product_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
+(5, 123, 0, 'mittag客服', '還有貨，供貨時間約為三個工作天，感謝您的提問...', 5, 0, '2017-11-20 15:15:48', '0000-00-00 00:00:00'),
+(4, 123, 0, 'JAMES', '還有貨嗎???還有貨嗎???還有貨嗎???還有貨嗎???還有貨嗎???還有貨嗎???還有貨嗎???還有貨嗎???', 5, 1, '2017-11-20 15:10:46', '2017-11-20 15:14:07');
+
 -- --------------------------------------------------------
 
 --
@@ -3653,76 +3738,40 @@ CREATE TABLE `oc_setting` (
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
-(650, 0, 'config', 'config_compression', '0', 0),
-(651, 0, 'config', 'config_secure', '0', 0),
-(652, 0, 'config', 'config_password', '0', 0),
-(653, 0, 'config', 'config_shared', '0', 0),
-(654, 0, 'config', 'config_encryption', 'Go29uBwYFd3rPW0QtVMLA3vVpulY5fMh6VQz3QhY1ls1e4c5pdhXJ5Gpzi3VttbvMjFGEMP0zixOCI7gaJhcJemcsmzPDjAQCSwx4qiIBxIvZBZ0jIOXlcEKncqFWNxVzKv2DQU5tltq4G02sFrDhHy1CYSWo9ruc4BcEcNe5bGdk9RcO3SNlzEuqOZIrU8XCLEL3smc2E1VCQfv5pC6fTJPSwehU8xpWwL3BipoC49oM5UA8uTwhT9A6lYImkEAaPm1DmGfTZvuIPfjD6VibID18bad3LDOLDh9o4N9nsUn3uKvos0bZJHk9qCX6qON3wzKR9KTwSLznEGN9IJ8GpVUhWiJr68L0XTUcnQWr4yB4xKM1AR5l6wx8ZMXz1H90ZdbEbEudAMU5Z0sx3mMpIhIvN5MrSx7IpU3XdJAzq7sDdgjNPNIbEgxGnssmSf1PpkSu808pyexpt4x9yxq4p5MyMAMocFvISELhX14AG1n85R7bs8xFYUKyUk1HpejJyy5AV76oTiexpRYCDTQ8JyH6r6R09PtzsYcIZzJkZPWFMX4ad5bwFx6fj4yIRRH8QQ21zgpCOqjGPdLtmdQ5iiTJlfopU8QtWYbE0ELFJD9Hyd6tUBVWzQKtAhjCfMk4KJjuJMeBmSKoxe7B2agZRqJlQfkuMxnqqR7wa4o7JMpXN3Ygu5WZsZjR4i2q5Jx9nHyVzPs1yLVKvPMC5a9wLyIvyLrFGfnC9TwiyWu9hNsv0uYxR49hCDn3VhuqWW9wz91fa2YmDoHzi71SwIkJ0lkymwoyLEfmFceqD6za9wTeZxMWvR7Lq9VFQXhPzfPZ1sC177Tf6JxhHBJ7mRmpXL8KDdEgxiGtc1tZQVfdmBao9DqNfMZzLPAKUdiHmlauhBmlXlipBqeos9rm8xUv7MIFjrB0MKrm7Oj6cguSDDiO3GZV6vskx6p6ygfYxEVFdag5QjHPY9kXVl0eNMMpedd0rjpuNTqM50vmK6FIu9YJ6VdD0Xtj941N4zxknPX', 0),
+(1027, 0, 'config', 'config_error_filename', 'error.log', 0),
+(1026, 0, 'config', 'config_error_log', '1', 0),
+(1025, 0, 'config', 'config_error_display', '1', 0),
+(1024, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
 (569, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (568, 0, 'voucher', 'voucher_status', '0', 0),
 (551, 0, 'bank_transfer', 'bank_transfer_status', '1', 0),
 (550, 0, 'bank_transfer', 'bank_transfer_geo_zone_id', '0', 0),
-(628, 0, 'config', 'config_captcha', '', 0),
-(629, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
-(630, 0, 'config', 'config_logo', 'catalog/mittaglogo.png', 0),
-(631, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
-(632, 0, 'config', 'config_ftp_hostname', 'mittag.com.tw', 0),
-(633, 0, 'config', 'config_ftp_port', '21', 0),
-(634, 0, 'config', 'config_ftp_username', '', 0),
-(635, 0, 'config', 'config_ftp_password', '', 0),
-(636, 0, 'config', 'config_ftp_root', '', 0),
-(637, 0, 'config', 'config_ftp_status', '0', 0),
-(638, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(639, 0, 'config', 'config_mail_parameter', '', 0),
-(640, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(641, 0, 'config', 'config_mail_smtp_username', '', 0),
-(642, 0, 'config', 'config_mail_smtp_password', '', 0),
-(643, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(644, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(645, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
-(646, 0, 'config', 'config_mail_alert_email', '', 0),
-(647, 0, 'config', 'config_maintenance', '0', 0),
-(648, 0, 'config', 'config_seo_url', '0', 0),
-(649, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(627, 0, 'config', 'config_return_status_id', '2', 0),
-(626, 0, 'config', 'config_return_id', '0', 0),
-(625, 0, 'config', 'config_affiliate_id', '4', 0),
-(624, 0, 'config', 'config_affiliate_commission', '5', 0),
-(623, 0, 'config', 'config_affiliate_auto', '0', 0),
-(622, 0, 'config', 'config_affiliate_approval', '0', 0),
-(621, 0, 'config', 'config_stock_checkout', '0', 0),
-(620, 0, 'config', 'config_stock_warning', '0', 0),
-(619, 0, 'config', 'config_stock_display', '0', 0),
-(618, 0, 'config', 'config_api_id', '1', 0),
-(617, 0, 'config', 'config_fraud_status_id', '12', 0),
-(616, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
-(615, 0, 'config', 'config_processing_status', '[\"12\",\"5\",\"3\",\"1\",\"2\"]', 1),
-(614, 0, 'config', 'config_order_status_id', '1', 0),
-(613, 0, 'config', 'config_checkout_id', '3', 0),
-(612, 0, 'config', 'config_checkout_guest', '1', 0),
-(611, 0, 'config', 'config_cart_weight', '1', 0),
-(610, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
-(609, 0, 'config', 'config_account_id', '3', 0),
-(608, 0, 'config', 'config_login_attempts', '5', 0),
-(607, 0, 'config', 'config_customer_price', '0', 0),
-(606, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
-(605, 0, 'config', 'config_customer_group_id', '1', 0),
-(604, 0, 'config', 'config_customer_search', '0', 0),
-(603, 0, 'config', 'config_customer_activity', '0', 0),
-(602, 0, 'config', 'config_customer_online', '0', 0),
-(601, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(600, 0, 'config', 'config_tax_default', 'shipping', 0),
-(599, 0, 'config', 'config_tax', '1', 0),
-(598, 0, 'config', 'config_voucher_max', '1000', 0),
-(597, 0, 'config', 'config_voucher_min', '1', 0),
-(596, 0, 'config', 'config_review_guest', '1', 0),
-(595, 0, 'config', 'config_review_status', '1', 0),
-(594, 0, 'config', 'config_limit_admin', '20', 0),
-(593, 0, 'config', 'config_product_count', '1', 0),
-(592, 0, 'config', 'config_weight_class_id', '1', 0),
-(591, 0, 'config', 'config_length_class_id', '1', 0),
-(590, 0, 'config', 'config_currency_auto', '1', 0),
-(589, 0, 'config', 'config_currency', 'TWD', 0),
+(1022, 0, 'config', 'config_file_max_size', '300000', 0),
+(1023, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
+(1003, 0, 'config', 'config_ftp_root', '', 0),
+(1004, 0, 'config', 'config_ftp_status', '1', 0),
+(1005, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(1006, 0, 'config', 'config_mail_parameter', '', 0),
+(1007, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(1008, 0, 'config', 'config_mail_smtp_username', '', 0),
+(1009, 0, 'config', 'config_mail_smtp_password', '', 0),
+(1010, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(1011, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(1012, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
+(1013, 0, 'config', 'config_mail_alert_email', '', 0),
+(1014, 0, 'config', 'config_maintenance', '0', 0),
+(1015, 0, 'config', 'config_seo_url', '0', 0),
+(1016, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(1017, 0, 'config', 'config_compression', '0', 0),
+(1018, 0, 'config', 'config_secure', '0', 0),
+(1019, 0, 'config', 'config_password', '0', 0),
+(1020, 0, 'config', 'config_shared', '0', 0),
+(1021, 0, 'config', 'config_encryption', 'Go29uBwYFd3rPW0QtVMLA3vVpulY5fMh6VQz3QhY1ls1e4c5pdhXJ5Gpzi3VttbvMjFGEMP0zixOCI7gaJhcJemcsmzPDjAQCSwx4qiIBxIvZBZ0jIOXlcEKncqFWNxVzKv2DQU5tltq4G02sFrDhHy1CYSWo9ruc4BcEcNe5bGdk9RcO3SNlzEuqOZIrU8XCLEL3smc2E1VCQfv5pC6fTJPSwehU8xpWwL3BipoC49oM5UA8uTwhT9A6lYImkEAaPm1DmGfTZvuIPfjD6VibID18bad3LDOLDh9o4N9nsUn3uKvos0bZJHk9qCX6qON3wzKR9KTwSLznEGN9IJ8GpVUhWiJr68L0XTUcnQWr4yB4xKM1AR5l6wx8ZMXz1H90ZdbEbEudAMU5Z0sx3mMpIhIvN5MrSx7IpU3XdJAzq7sDdgjNPNIbEgxGnssmSf1PpkSu808pyexpt4x9yxq4p5MyMAMocFvISELhX14AG1n85R7bs8xFYUKyUk1HpejJyy5AV76oTiexpRYCDTQ8JyH6r6R09PtzsYcIZzJkZPWFMX4ad5bwFx6fj4yIRRH8QQ21zgpCOqjGPdLtmdQ5iiTJlfopU8QtWYbE0ELFJD9Hyd6tUBVWzQKtAhjCfMk4KJjuJMeBmSKoxe7B2agZRqJlQfkuMxnqqR7wa4o7JMpXN3Ygu5WZsZjR4i2q5Jx9nHyVzPs1yLVKvPMC5a9wLyIvyLrFGfnC9TwiyWu9hNsv0uYxR49hCDn3VhuqWW9wz91fa2YmDoHzi71SwIkJ0lkymwoyLEfmFceqD6za9wTeZxMWvR7Lq9VFQXhPzfPZ1sC177Tf6JxhHBJ7mRmpXL8KDdEgxiGtc1tZQVfdmBao9DqNfMZzLPAKUdiHmlauhBmlXlipBqeos9rm8xUv7MIFjrB0MKrm7Oj6cguSDDiO3GZV6vskx6p6ygfYxEVFdag5QjHPY9kXVl0eNMMpedd0rjpuNTqM50vmK6FIu9YJ6VdD0Xtj941N4zxknPX', 0),
+(1002, 0, 'config', 'config_ftp_password', '0000', 0),
+(1001, 0, 'config', 'config_ftp_username', 'root', 0),
+(1000, 0, 'config', 'config_ftp_port', '21', 0),
+(999, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
+(998, 0, 'config', 'config_icon', 'catalog/cart.png', 0),
 (95, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (96, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
 (97, 0, 'shipping', 'shipping_sort_order', '3', 0),
@@ -3802,25 +3851,17 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (171, 0, 'dashboard_recent', 'dashboard_recent_sort_order', '8', 0),
 (172, 0, 'dashboard_activity', 'dashboard_activity_width', '4', 0),
 (173, 0, 'dashboard_recent', 'dashboard_recent_width', '8', 0),
-(588, 0, 'config', 'config_admin_language', 'zh-TW', 0),
-(587, 0, 'config', 'config_language', 'zh-TW', 0),
-(586, 0, 'config', 'config_zone_id', '3135', 0),
-(585, 0, 'config', 'config_country_id', '206', 0),
-(584, 0, 'config', 'config_comment', '', 0),
-(583, 0, 'config', 'config_open', '', 0),
-(582, 0, 'config', 'config_image', '', 0),
-(581, 0, 'config', 'config_fax', '', 0),
-(580, 0, 'config', 'config_telephone', '02123456789', 0),
-(579, 0, 'config', 'config_email', 'anikiwayne@gmail.com', 0),
-(578, 0, 'config', 'config_geocode', '', 0),
-(577, 0, 'config', 'config_address', 'TAIPEI TAIWAN', 0),
-(576, 0, 'config', 'config_owner', 'MITTAG', 0),
-(575, 0, 'config', 'config_name', 'MITTAG', 0),
-(574, 0, 'config', 'config_layout_id', '4', 0),
-(573, 0, 'config', 'config_theme', 'theme_default', 0),
-(572, 0, 'config', 'config_meta_keyword', '', 0),
-(571, 0, 'config', 'config_meta_description', 'MITTAG', 0),
-(570, 0, 'config', 'config_meta_title', 'MITTAG', 0),
+(996, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
+(997, 0, 'config', 'config_logo', 'catalog/mittaglogo.png', 0),
+(995, 0, 'config', 'config_captcha', '', 0),
+(994, 0, 'config', 'config_return_status_id', '2', 0),
+(993, 0, 'config', 'config_return_id', '0', 0),
+(992, 0, 'config', 'config_affiliate_id', '4', 0),
+(991, 0, 'config', 'config_affiliate_commission', '5', 0),
+(990, 0, 'config', 'config_affiliate_auto', '0', 0),
+(989, 0, 'config', 'config_affiliate_approval', '0', 0),
+(987, 0, 'config', 'config_stock_warning', '0', 0),
+(988, 0, 'config', 'config_stock_checkout', '0', 0),
 (549, 0, 'bank_transfer', 'bank_transfer_order_status_id', '12', 0),
 (548, 0, 'bank_transfer', 'bank_transfer_total', '100', 0),
 (547, 0, 'bank_transfer', 'bank_transfer_bank1', '玉山分行', 0),
@@ -3830,15 +3871,59 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (557, 0, 'low_order_fee', 'low_order_fee_tax_class_id', '0', 0),
 (558, 0, 'low_order_fee', 'low_order_fee_status', '0', 0),
 (559, 0, 'low_order_fee', 'low_order_fee_sort_order', '', 0),
-(655, 0, 'config', 'config_file_max_size', '300000', 0),
-(656, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
-(657, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
-(658, 0, 'config', 'config_error_display', '1', 0),
-(659, 0, 'config', 'config_error_log', '1', 0),
-(660, 0, 'config', 'config_error_filename', 'error.log', 0),
+(985, 0, 'config', 'config_api_id', '1', 0),
+(986, 0, 'config', 'config_stock_display', '0', 0),
+(983, 0, 'config', 'config_complete_status', '[\"5\",\"3\"]', 1),
+(984, 0, 'config', 'config_fraud_status_id', '12', 0),
+(982, 0, 'config', 'config_processing_status', '[\"12\",\"5\",\"3\",\"1\",\"2\"]', 1),
+(981, 0, 'config', 'config_order_status_id', '1', 0),
+(980, 0, 'config', 'config_checkout_id', '3', 0),
+(979, 0, 'config', 'config_checkout_guest', '1', 0),
+(977, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
+(978, 0, 'config', 'config_cart_weight', '1', 0),
+(976, 0, 'config', 'config_account_id', '3', 0),
+(975, 0, 'config', 'config_login_attempts', '5', 0),
+(974, 0, 'config', 'config_customer_price', '0', 0),
+(973, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
+(972, 0, 'config', 'config_customer_group_id', '1', 0),
 (661, 0, 'pickup', 'pickup_geo_zone_id', '0', 0),
 (662, 0, 'pickup', 'pickup_status', '0', 0),
-(663, 0, 'pickup', 'pickup_sort_order', '', 0);
+(663, 0, 'pickup', 'pickup_sort_order', '', 0),
+(971, 0, 'config', 'config_customer_search', '0', 0),
+(960, 0, 'config', 'config_product_count', '1', 0),
+(961, 0, 'config', 'config_limit_admin', '20', 0),
+(962, 0, 'config', 'config_review_status', '1', 0),
+(963, 0, 'config', 'config_review_guest', '1', 0),
+(964, 0, 'config', 'config_voucher_min', '1', 0),
+(965, 0, 'config', 'config_voucher_max', '1000', 0),
+(966, 0, 'config', 'config_tax', '0', 0),
+(967, 0, 'config', 'config_tax_default', '', 0),
+(968, 0, 'config', 'config_tax_customer', '', 0),
+(969, 0, 'config', 'config_customer_online', '0', 0),
+(970, 0, 'config', 'config_customer_activity', '0', 0),
+(959, 0, 'config', 'config_weight_class_id', '1', 0),
+(958, 0, 'config', 'config_length_class_id', '1', 0),
+(957, 0, 'config', 'config_currency_auto', '1', 0),
+(956, 0, 'config', 'config_currency', 'TWD', 0),
+(955, 0, 'config', 'config_admin_language', 'zh-TW', 0),
+(954, 0, 'config', 'config_language', 'zh-TW', 0),
+(953, 0, 'config', 'config_zone_id', '3135', 0),
+(952, 0, 'config', 'config_country_id', '206', 0),
+(950, 0, 'config', 'config_open', '', 0),
+(951, 0, 'config', 'config_comment', '', 0),
+(949, 0, 'config', 'config_image', '', 0),
+(948, 0, 'config', 'config_fax', '', 0),
+(947, 0, 'config', 'config_telephone', '02123456789', 0),
+(946, 0, 'config', 'config_email', 'anikiwayne@gmail.com', 0),
+(945, 0, 'config', 'config_geocode', '', 0),
+(944, 0, 'config', 'config_address', 'TAIPEI TAIWAN', 0),
+(943, 0, 'config', 'config_owner', 'MITTAG', 0),
+(939, 0, 'config', 'config_meta_keyword', '', 0),
+(940, 0, 'config', 'config_theme', 'theme_default', 0),
+(941, 0, 'config', 'config_layout_id', '4', 0),
+(942, 0, 'config', 'config_name', 'MITTAG', 0),
+(938, 0, 'config', 'config_meta_description', 'MITTAG', 0),
+(937, 0, 'config', 'config_meta_title', 'MITTAG', 0);
 
 -- --------------------------------------------------------
 
@@ -4030,21 +4115,9 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (920, 'category_id=34', 'others'),
 (915, 'category_id=18', 'laptop-notebook'),
 (916, 'category_id=25', 'ring'),
-(939, 'product_id=68', 'train/necklace/火車項鍊'),
-(941, 'product_id=69', 'train/baby/bracelet/火車寶寶手鍊'),
 (937, 'category_id=17', 'software'),
 (919, 'category_id=33', 'silverware'),
-(990, 'product_id=56', 'RG309/chasing/ice/ring'),
-(927, 'product_id=58', 'typhoon/eye/ring/颱風眼戒指'),
-(929, 'product_id=59', 'snake/drei/ring/蜿蜒蛇戒指'),
-(932, 'product_id=60', 'firm/f/ring/堅毅女戒'),
-(931, 'product_id=62', 'knot/ring/結戒'),
-(933, 'product_id=63', 'donuts/ring/甜甜圈戒指'),
-(934, 'product_id=64', 'super/ring/超能戒指'),
-(969, 'product_id=65', 'finger/print/ring/指紋戒指'),
 (918, 'category_id=24', 'babyshowegift'),
-(974, 'product_id=66', 'finger/print/necklace/指紋項鍊'),
-(938, 'product_id=67', 'train/bracelet/火車手鍊'),
 (828, 'manufacturer_id=9', 'canon'),
 (829, 'manufacturer_id=5', 'htc'),
 (830, 'manufacturer_id=7', 'hewlett-packard'),
@@ -4052,9 +4125,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (832, 'manufacturer_id=10', 'sony'),
 (989, 'information_id=6', 'delivery'),
 (988, 'information_id=3', 'privacy'),
-(991, 'information_id=5', 'terms'),
-(985, 'product_id=92', 'RG702'),
-(979, 'product_id=91', 'ER777');
+(995, 'information_id=5', 'terms');
 
 -- --------------------------------------------------------
 
@@ -4083,9 +4154,9 @@ CREATE TABLE `oc_user` (
 --
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
-(1, 1, 'admin', '728e3788545e6df0f0ee86120cb2b7c8fc8a9472', 'jE5Ie3DGw', 'Wayne', 'Lin', 'anikiwayne@gmail.com', '', '', '223.136.138.33', 1, '2016-11-05 08:43:30'),
+(1, 1, 'admin', '728e3788545e6df0f0ee86120cb2b7c8fc8a9472', 'jE5Ie3DGw', 'Wayne', 'Lin', 'anikiwayne@gmail.com', '', '', '220.135.38.215', 1, '2016-11-05 08:43:30'),
 (2, 11, 'lingwei', '6f44f9bf3b942e98977499e1953e1dcfbfca8880', 'Z6bNRbbzl', 'lin', 'lingwei', 'linjohnwayne@gmail.com', '', '', '61.228.19.76', 1, '2016-11-24 16:34:30'),
-(3, 11, 'ukjames', '4e841889c218e0c90765b14b31820bffc984e5bc', '3CH8nYGdP', 'ukjames312312@gmail.com', 'james', 'ukjames312312@gmail.com', '', '', '59.115.237.71', 1, '2017-09-10 12:12:44');
+(3, 11, 'ukjames', '4e841889c218e0c90765b14b31820bffc984e5bc', '3CH8nYGdP', 'ukjames312312@gmail.com', 'james', 'ukjames312312@gmail.com', '', '', '36.229.208.124', 1, '2017-09-10 12:12:44');
 
 -- --------------------------------------------------------
 
@@ -4104,7 +4175,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, '開發者', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/payment\\/bank_transfer\",\"extension\\/shipping\\/pickup\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/payment\\/bank_transfer\",\"extension\\/shipping\\/pickup\"]}'),
+(1, '開發者', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/payment\\/bank_transfer\",\"extension\\/shipping\\/pickup\",\"extension\\/module\\/latest\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/simple_blog\",\"extension\\/module\\/simple_blog_category\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/payment\\/bank_transfer\",\"extension\\/shipping\\/pickup\",\"extension\\/module\\/latest\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/simple_blog\",\"extension\\/module\\/simple_blog_category\"]}'),
 (10, '一般', ''),
 (11, '最高管理員', '{\"access\":[\"catalog\\/category\",\"catalog\\/information\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/review\",\"common\\/filemanager\",\"customer\\/customer\",\"design\\/banner\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/payment\\/bank_transfer\",\"localisation\\/location\",\"localisation\\/stock_status\",\"marketing\\/contact\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"sale\\/order\",\"sale\\/return\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/sf_express\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}');
 
@@ -8776,6 +8847,19 @@ ALTER TABLE `oc_download_description`
   ADD PRIMARY KEY (`download_id`,`language_id`);
 
 --
+-- 資料表索引 `oc_easy_blog_article`
+--
+ALTER TABLE `oc_easy_blog_article`
+  ADD PRIMARY KEY (`article_id`);
+
+--
+-- 資料表索引 `oc_easy_blog_article_description`
+--
+ALTER TABLE `oc_easy_blog_article_description`
+  ADD PRIMARY KEY (`article_id`,`language_id`),
+  ADD KEY `name` (`name`);
+
+--
 -- 資料表索引 `oc_event`
 --
 ALTER TABLE `oc_event`
@@ -9366,12 +9450,12 @@ ALTER TABLE `oc_banner`
 -- 使用資料表 AUTO_INCREMENT `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_category`
 --
@@ -9431,7 +9515,7 @@ ALTER TABLE `oc_customer_ip`
 -- 使用資料表 AUTO_INCREMENT `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
-  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_customer_reward`
 --
@@ -9463,6 +9547,11 @@ ALTER TABLE `oc_custom_field_value`
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- 使用資料表 AUTO_INCREMENT `oc_easy_blog_article`
+--
+ALTER TABLE `oc_easy_blog_article`
+  MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- 使用資料表 AUTO_INCREMENT `oc_event`
 --
 ALTER TABLE `oc_event`
@@ -9471,7 +9560,7 @@ ALTER TABLE `oc_event`
 -- 使用資料表 AUTO_INCREMENT `oc_extension`
 --
 ALTER TABLE `oc_extension`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_filter`
 --
@@ -9491,7 +9580,7 @@ ALTER TABLE `oc_geo_zone`
 -- 使用資料表 AUTO_INCREMENT `oc_information`
 --
 ALTER TABLE `oc_information`
-  MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_language`
 --
@@ -9501,17 +9590,17 @@ ALTER TABLE `oc_language`
 -- 使用資料表 AUTO_INCREMENT `oc_layout`
 --
 ALTER TABLE `oc_layout`
-  MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=140;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_length_class`
 --
@@ -9541,12 +9630,12 @@ ALTER TABLE `oc_menu`
 -- 使用資料表 AUTO_INCREMENT `oc_modification`
 --
 ALTER TABLE `oc_modification`
-  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_module`
 --
 ALTER TABLE `oc_module`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_option`
 --
@@ -9561,7 +9650,7 @@ ALTER TABLE `oc_option_value`
 -- 使用資料表 AUTO_INCREMENT `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_custom_field`
 --
@@ -9571,7 +9660,7 @@ ALTER TABLE `oc_order_custom_field`
 -- 使用資料表 AUTO_INCREMENT `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_option`
 --
@@ -9581,7 +9670,7 @@ ALTER TABLE `oc_order_option`
 -- 使用資料表 AUTO_INCREMENT `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_recurring`
 --
@@ -9601,7 +9690,7 @@ ALTER TABLE `oc_order_status`
 -- 使用資料表 AUTO_INCREMENT `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=277;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=283;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_voucher`
 --
@@ -9611,7 +9700,7 @@ ALTER TABLE `oc_order_voucher`
 -- 使用資料表 AUTO_INCREMENT `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_product_discount`
 --
@@ -9621,7 +9710,7 @@ ALTER TABLE `oc_product_discount`
 -- 使用資料表 AUTO_INCREMENT `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
-  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2647;
+  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2917;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_product_option`
 --
@@ -9676,12 +9765,12 @@ ALTER TABLE `oc_return_status`
 -- 使用資料表 AUTO_INCREMENT `oc_review`
 --
 ALTER TABLE `oc_review`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=664;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1028;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_stock_status`
 --
@@ -9726,7 +9815,7 @@ ALTER TABLE `oc_upload`
 -- 使用資料表 AUTO_INCREMENT `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=992;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1008;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_user`
 --

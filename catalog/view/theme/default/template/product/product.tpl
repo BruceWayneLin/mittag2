@@ -5,7 +5,36 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          var divAt = $('#actOne').val();
+          var divDesc = $('#actTwo').val();
+          console.log(divAt.length);
+          console.log(divDesc.length);
+          if(divAt.length == 5 && divDesc.length == 5){
+            $('#main-content').hide();
+            $('#activity-content').show();
+          }else{
+            $('#activity-content').hide();
+            $('#main-content').show();
+          }
+      });
+  </script>
+  <div id="activity-content" class="row">
+      <div class="container">
+          <input id="actOne" class="hidden" type="text" value="<?php echo $activity_title == '' ? 'true' : 'false'; ?>"/>
+          <input id="actTwo" class="hidden" type="text" value="<?php echo $activity_desc == '' ? 'true' : 'false'; ?>"/>
+      </div>
+      <div class="container text-center">
+          <h3><?php echo $activity_title; ?></h3>
+      </div>
+      <div class="row">
+          <div class="container text-center">
+              <?php echo $activity_desc; ?>
+          </div>
+      </div>
+  </div>
+  <div id="main-content" class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -24,11 +53,11 @@
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img id="mainThumb" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li><div class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img id="mainThumb" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
-            <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li class="image-additional"><div class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></div></li>
             <?php } ?>
             <?php } ?>
           </ul>
@@ -84,7 +113,7 @@
                     <div class="help-block"><?php echo $text_note; ?></div>
                   </div>
                 </div>
-                <div class="form-group hidden ">
+                <div class="form-group  hidden">
                   <div class="col-sm-12">
                     <label class="control-label hidden"><?php echo $entry_rating; ?></label>
                     &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
@@ -96,7 +125,7 @@
                     &nbsp;
                     <input type="radio" name="rating" value="4" />
                     &nbsp;
-                    <input type="radio" name="rating" value="5" />
+                    <input type="radio" name="rating" checked value="5" />
                     &nbsp;<?php echo $entry_good; ?></div>
                 </div>
                 <?php echo $captcha; ?>
@@ -119,8 +148,12 @@
         <?php $class = 'col-sm-4'; ?>
         <?php } ?>
         <div class="<?php echo $class; ?>">
-          <h1 class="getval" style="display:none;"><?php echo $heading_title; ?></h1>
-          <h2 class="setvaleng"></h2>
+          <h1 class="getval" style="font-size: 22px;"><?php echo $heading_title; ?></h1>
+          <span class="setvaleng" style="font-size:14px;">
+              <?php if ($eng_name) { ?>
+              <?php echo $eng_name; ?>
+              <?php } ?>
+          </span>
           <p class="setval"></p>
           <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
@@ -141,13 +174,16 @@
             <li>交貨時間: <?php echo $deliveringTime; ?> </li>
             <?php } ?>
             <?php if ($deliveringExtra) { ?>
-            <li style="padding-left: 60px;"><?php echo $deliveringExtra; ?> </li>
+            <li style="padding-left: 40px;"><?php echo $deliveringExtra; ?> </li>
             <?php } ?>
             <?php if ($braceLong &&  $braceWidth && $braceHeight) { ?>
-            <li style="padding-left: 60px;">主飾品長度：長<?php echo $braceLong; ?>cm x 寬<?php echo $braceWidth; ?>cm x 高<?php echo $braceHeight; ?>cm</li>
+            <li style="">主飾品長度：長<?php echo $braceLong; ?>cm x 寬<?php echo $braceWidth; ?>cm x 高<?php echo $braceHeight; ?>cm</li>
+            <?php } ?>
+            <?php if ($length &&  $width && $height) { ?>
+            <li style="">尺寸：長<?php echo $length; ?>cm x 寬<?php echo $width; ?>cm x 高<?php echo $height; ?>cm</li>
             <?php } ?>
             <?php if ($braceNote) { ?>
-            <li style="padding-left: 60px;"><?php echo $braceNote; ?> </li>
+            <li style="padding-left: 40px;"><?php echo $braceNote; ?> </li>
             <?php } ?>
             <?php if ($braceSeleLen) { ?>
             <li>手鍊長度: <?php echo $braceSeleLen; ?> cm</li>
@@ -162,7 +198,7 @@
             <li>耳環形式: <?php echo $earingType; ?></li>
             <?php } ?>
             <?php if ($secondaryNote) { ?>
-            <li style="padding-left: 60px;"><?php echo $secondaryNote; ?></li>
+            <li style="padding-left: 40px;"><?php echo $secondaryNote; ?></li>
             <?php } ?>
           </ul>
           <?php if ($price) { ?>
@@ -333,7 +369,7 @@
                     }
                  }
               ?>
-              <?php echo '</select><a style="font-weight: 400px; font-size:12px; color:#337ab7" href="http://localhost/mittag/index.php?route=information/information&information_id=5">尺寸對照表</a>'; ?>
+              <?php echo '</select><a style="font-weight: 400px; font-size:12px; color:#337ab7" href="./index.php?route=information/information&information_id=5">尺寸對照表</a>'; ?>
               <div class="extraDetail">
                     <?php
                                 if ( $extraDetail) {
@@ -482,7 +518,7 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
   var textLen = text.length - 2;
   var rearray = '';
   var engarray = '';
-  for(var i = 0; i <= text.length; i ++) {
+//  for(var i = 0; i <= text.length; i ++) {
 //     if(text[i].match(/[\u3400-\u9FBF]/)) {
 //       rearray = text[i];
 //       $('.setval').append(rearray);
@@ -493,7 +529,7 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 //           console.log(i, engarray);
 //       }
 //     }
-  };
+//  };
 
 $('#button-cart').on('click', function() {
 	$.ajax({

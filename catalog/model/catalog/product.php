@@ -54,9 +54,13 @@ class ModelCatalogProduct extends Model {
                 'braceNote'        => $query->row['braceNote'],
                 'braceletDiameter' => $query->row['braceletDiameter'],
                 'necklaceLength'   => $query->row['necklaceLength'],
-                'earingType'   => $query->row['earingType'],
+                'earingType'  	   => $query->row['earingType'],
+				'activity_title'   => $query->row['activity_title'],
+				'eng_name'         => $query->row['eng_name'],
+				'activity_desc'    => $query->row['activity_desc'],
 
-                'length_class_id'  => $query->row['length_class_id'],
+
+				'length_class_id'  => $query->row['length_class_id'],
 				'subtract'         => $query->row['subtract'],
 				'rating'           => round($query->row['rating']),
 				'reviews'          => $query->row['reviews'] ? $query->row['reviews'] : 0,

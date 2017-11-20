@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
+    <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
@@ -95,14 +95,13 @@
                 <h4><a style="font-size:13px;" href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
                 <p style="font-weight:normal;font-size:10px;"><?php echo $product['description']; ?></p>
                 <?php if ($product['price']) { ?>
-                <p class="price">
+                <p class="<?php echo $product['activity_title'] !== '' ? 'hidden' : ''; ?>">
                   <?php if (!$product['special']) { ?>
                   <?php echo $product['price']; ?>
                   <?php } else { ?>
                   <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
                   <?php } ?>
                   <?php if ($product['tax']) { ?>
-                  <span class="price-tax hidden"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
                   <?php } ?>
                 </p>
                 <?php } ?>
@@ -163,8 +162,14 @@
 <script src="catalog/view/theme/default/template/product/productjs/prodjs2.js"></script>
 <!-- The core Waterfall library -->
 <script src="catalog/view/theme/default/template/product/productjs/prodjs3.js"></script>
-<script>
+<script type="text/javascript">
     $(function(){
         $('#box').waterfall();
+        var array = $('.product-thumb');
+        array.each(function(item){
+          console.log($(this).height());
+          console.log(Math.floor((Math.random() * 80 ) + 400));
+            $(this).height(Math.floor((Math.random() * (550-380 + 1) ) + 400));
+        });
     })
 </script>

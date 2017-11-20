@@ -38,6 +38,7 @@
             <li><a href="#tab-bracelet" data-toggle="tab">手鍊選項</a></li>
             <li><a href="#tab-necklace" data-toggle="tab">項鍊選項</a></li>
             <li><a href="#tab-earing" data-toggle="tab">耳環選項</a></li>
+            <li><a href="#tab-activity" data-toggle="tab">新增活動</a></li>
             <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
             <li class="hidden"><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li>
             <li class="hidden"><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
@@ -61,6 +62,12 @@
                       <?php } ?>
                     </div>
                   </div>
+                    <div class="form-group required">
+                        <label class="col-sm-2 control-label" for="eng_name">英文名稱</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="eng_name" value="<?php echo $eng_name; ?>" placeholder="請輸入英文名稱" id="eng_name" class="form-control" />
+                        </div>
+                    </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-category"><span data-toggle="tooltip" title="<?php echo $help_category; ?>">產品類別</span></label>
                     <div class="col-sm-10">
@@ -201,6 +208,21 @@
               </div>
             </div>
 
+            <div class="tab-pane" id="tab-activity">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-status">活動標題:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="activity_title" value="<?php echo $activity_title; ?>" placeholder="請輸入活動標題" id="input-texture" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-texture">活動內容</label>
+                    <div class="col-sm-10">
+                        <textarea  name="activity_desc" value="<?php echo $activity_desc; ?>" placeholder="請輸入活動內容" id="input-texture" class="form-control summernote"  name="" id="" cols="30" rows="10"><?php echo $activity_desc; ?></textarea>
+                    </div>
+                </div>
+            </div>
+
             <div class="tab-pane" id="tab-data">
               <div class="form-group required">
                 <label class="col-sm-2 control-label" for="input-model"><?php echo $entry_model; ?></label>
@@ -256,13 +278,16 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-texture">交貨時間</label>
                 <div class="col-sm-10">
-                  <input type="text" name="deliveringTime" value="<?php echo $deliveringTime; ?>" placeholder="輸入交貨時間" id="input-texture" class="form-control" />
+                    <select class="form-control" name="deliveringTime" id="">
+                        <option value="約3個工作天，不包含運送時間" selected="<?php echo $deliveringTime == '約3個工作天，不包含運送時間'? 'selected' : ''; ?>">約3個工作天，不包含運送時間</option>
+                        <option value="約14個工作天，不包含運送時間" selected="<?php echo $deliveringTime == '約14個工作天，不包含運送時間'? 'selected' : ''; ?>">約14個工作天，不包含運送時間</option>
+                    </select>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-texture">交貨時間(備註:)</label>
                 <div class="col-sm-10">
-                  <input type="text" name="deliveringExtra" value="<?php echo $deliveringExtra; ?>" placeholder="輸入交貨時間" id="input-texture" class="form-control" />
+                  <textarea  name="deliveringExtra" value="<?php echo $deliveringExtra; ?>" placeholder="輸入交貨時間" id="input-texture" class="form-control summernote"  name="" id="" cols="30" rows="10"><?php echo $deliveringExtra; ?></textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -274,15 +299,16 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-status">主飾品尺寸:</label>
                 <div class="col-sm-10">
-                  <div class="col-sm-4">長:<input class="form-control" name="braceLong" type="text" value="<?php echo $braceLong ?>" placeholder="主飾品長"></div>
-                  <div class="col-sm-4">寬:<input class="form-control" name="braceWidth" type="text" value="<?php echo $braceWidth ?>" placeholder="主飾品寬"></div>
-                  <div class="col-sm-4">高:<input class="form-control" name="braceHeight" type="text" value="<?php echo $braceHeight ?>" placeholder="主飾品高"></div>
+                  <div class="col-sm-4">長:<input class="form-control" name="braceLong" type="text" value="<?php echo $braceLong ?>" placeholder="主飾品長">(長cm)</div>
+                  <div class="col-sm-4">寬:<input class="form-control" name="braceWidth" type="text" value="<?php echo $braceWidth ?>" placeholder="主飾品寬">(寬cm)</div>
+                  <div class="col-sm-4">高:<input class="form-control" name="braceHeight" type="text" value="<?php echo $braceHeight ?>" placeholder="主飾品高">(高cm)</div>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-status">主飾品備註:</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" name="braceNote" value="<?php echo $braceNote ?>" placeholder="請輸入主飾品備註">
+                    <textarea type="text" class="form-control summernote" name="braceNote" id="" cols="30" rows="10"><?php echo $braceNote ?>
+                    </textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -400,12 +426,15 @@
                   <div class="row">
                     <div class="col-sm-4">
                       <input type="text" name="length" value="<?php echo $length; ?>" placeholder="<?php echo $entry_length; ?>" id="input-length" class="form-control" />
+                        (長cm)
                     </div>
                     <div class="col-sm-4">
                       <input type="text" name="width" value="<?php echo $width; ?>" placeholder="<?php echo $entry_width; ?>" id="input-width" class="form-control" />
+                        (寬cm)
                     </div>
                     <div class="col-sm-4">
                       <input type="text" name="height" value="<?php echo $height; ?>" placeholder="<?php echo $entry_height; ?>" id="input-height" class="form-control" />
+                        (高cm)
                     </div>
                   </div>
                 </div>
@@ -424,13 +453,13 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group hidden">
                 <label class="col-sm-2 control-label" for="input-weight"><?php echo $entry_weight; ?></label>
                 <div class="col-sm-10">
                   <input type="text" name="weight" value="<?php echo $weight; ?>" placeholder="<?php echo $entry_weight; ?>" id="input-weight" class="form-control" />
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group hidden">
                 <label class="col-sm-2 control-label" for="input-weight-class"><?php echo $entry_weight_class; ?></label>
                 <div class="col-sm-10">
                   <select name="weight_class_id" id="input-weight-class" class="form-control">

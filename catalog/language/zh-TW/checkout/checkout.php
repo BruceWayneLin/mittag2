@@ -6,7 +6,7 @@ $_['heading_title']                  = '結帳';
 $_['text_cart']                    = '購物車';
 $_['text_checkout_option']           = '1: 結帳確認';
 $_['text_checkout_account']          = '2: 帳戶 &amp; 帳單細節';
-$_['text_checkout_payment_address']  = '2: 帳單地址';
+$_['text_checkout_payment_address']  = '2: 配送地址';
 $_['text_checkout_shipping_address'] = '3: 配送地址';
 $_['text_checkout_shipping_method']  = '4: 配送方式';
 $_['text_checkout_payment_method']   = '5: 付款方式';
@@ -66,7 +66,7 @@ $_['entry_city']                     = '城市';
 $_['entry_country']                  = '國家';
 $_['entry_zone']                     = '地區或省';
 $_['entry_newsletter']               = '我願意收到 %s 的最新商品訊息';
-$_['entry_shipping'] 	             = '商品配送地址和帳單地址相同';
+$_['entry_shipping'] 	             = '商品配送地址和配送地址相同';
 
 // Error
 $_['error_warning']                  = '請選擇其他付款方式，如果無適用於您的付款方式請 <a href="%s">與店家連絡</a>.';

@@ -1,5 +1,5 @@
 <h3><?php echo $heading_title; ?></h3>
-<div class="row">
+<div id="box" class="row">
   <?php foreach ($products as $product) { ?>
   <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="product-thumb transition">
@@ -18,9 +18,12 @@
           <?php } ?>
         </div>
         <?php } ?>
-        <?php if ($product['price']) { ?>
+        <?php if ($product['activity_title']) { ?>
+        <span class="price-new"> </span>
+        <?php  } ?>
+        <?php if ($product['price'] && !$product['activity_title']) { ?>
         <p class="price">
-          <?php if (!$product['special']) { ?>
+          <?php if (!$product['special'] && !$product['activity_title']) { ?>
           <?php echo $product['price']; ?>
           <?php } else { ?>
           <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
@@ -31,7 +34,7 @@
         </p>
         <?php } ?>
       </div>
-      <div class="button-group">
+      <div class="button-group hidden">
         <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
         <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
         <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
@@ -40,3 +43,14 @@
   </div>
   <?php } ?>
 </div>
+<script type="text/javascript">
+    $(function(){
+        $('#box').waterfall();
+        var array = $('.product-thumb');
+        array.each(function(item){
+          console.log($(this).height());
+          console.log(Math.floor((Math.random() * 80 ) + 400));
+            $(this).height(Math.floor((Math.random() * (550-380 + 1) ) + 400));
+        })
+    })
+</script>

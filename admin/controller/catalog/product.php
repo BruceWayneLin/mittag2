@@ -888,6 +888,7 @@ class ControllerCatalogProduct extends Controller {
             $data['deliveringExtra'] = '';
         }
 
+
         if (isset($this->request->post['extraDetail'])) {
             $data['extraDetail'] = $this->request->post['extraDetail'];
         } elseif (!empty($product_info)) {
@@ -1131,6 +1132,30 @@ class ControllerCatalogProduct extends Controller {
         } else {
             $data['necklaceLength'] = '';
         }
+
+		if (isset($this->request->post['activity_desc'])) {
+			$data['activity_desc'] = $this->request->post['activity_desc'];
+		} elseif (!empty($product_info)) {
+			$data['activity_desc'] = $product_info['activity_desc'];
+		} else {
+			$data['activity_desc'] = '';
+		}
+
+		if (isset($this->request->post['eng_name'])) {
+			$data['eng_name'] = $this->request->post['eng_name'];
+		} elseif (!empty($product_info)) {
+			$data['eng_name'] = $product_info['eng_name'];
+		} else {
+			$data['eng_name'] = '';
+		}
+
+		if (isset($this->request->post['activity_title'])) {
+			$data['activity_title'] = $this->request->post['activity_title'];
+		} elseif (!empty($product_info)) {
+			$data['activity_title'] = $product_info['activity_title'];
+		} else {
+			$data['activity_title'] = '';
+		}
 
         if (isset($this->request->post['earingType'])) {
             $data['earingType'] = $this->request->post['earingType'];

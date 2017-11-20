@@ -37,6 +37,7 @@ class ControllerStartupPermission extends Controller {
 			$ignore = array(
                 'common/emailthanks',
                 'common/email',
+				'common/blog',
 				'common/dashboard',
 				'common/login',
 				'common/logout',

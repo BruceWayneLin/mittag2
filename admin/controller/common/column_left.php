@@ -48,6 +48,14 @@ class ControllerCommonColumnLeft extends Controller {
 //                'children' => array()
 //            );
 
+//			$data['menus'][] = array(
+//                'id'       => 'menu-test',
+//                'icon'	   => 'fa-dashboard',
+//                'name'	   => '活動',
+//                'href'     => $this->url->link('common/blog', 'token=' . $this->session->data['token'], true),
+//                'children' => array()
+//            );
+
 			// Catalog
 			$catalog = array();
 			

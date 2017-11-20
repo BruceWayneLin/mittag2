@@ -273,15 +273,20 @@ class ControllerProductProduct extends Controller {
             $data['braceHeight'] = $product_info['braceHeight'];
             $data['braceSeleLen'] = $product_info['braceSeleLen'];
             $data['secondaryNote'] = $product_info['secondaryNote'];
-            $data['braceNote'] = $product_info['braceNote'];
+            $data['braceNote'] = html_entity_decode($product_info['braceNote'], ENT_QUOTES, 'UTF-8');
             $data['braceletDiameter'] = $product_info['braceletDiameter'];
             $data['necklaceLength'] = $product_info['necklaceLength'];
             $data['earingType'] = $product_info['earingType'];
+			$data['activity_title'] = $product_info['activity_title'];
+			$data['activity_desc'] = html_entity_decode($product_info['activity_desc'], ENT_QUOTES, 'UTF-8');
+			$data['eng_name'] = $product_info['eng_name'];
 
-
+			$data['length'] = $product_info['length'];
+			$data['width'] = $product_info['width'];
+			$data['height'] = $product_info['height'];
 
             $data['deliveringTime'] = $product_info['deliveringTime'];
-            $data['deliveringExtra'] = $product_info['deliveringExtra'];
+            $data['deliveringExtra'] = html_entity_decode($product_info['deliveringExtra'], ENT_QUOTES, 'UTF-8');
             $data['extraDetail'] = $product_info['extraDetail'];
             $data['ringSizeStart'] = $product_info['ringSizeStart'];
             $data['ringSizeEnd'] = $product_info['ringSizeEnd'];
@@ -311,7 +316,7 @@ class ControllerProductProduct extends Controller {
 			}
 
 			if ($product_info['image']) {
-				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get($this->config->get('config_theme') . '_image_thumb_width'), $this->config->get($this->config->get('config_theme') . '_image_thumb_height'));
+				$data['thumb'] = $this->model_tool_image->resize($product_info['image'], '800' , '800');
 			} else {
 				$data['thumb'] = '';
 			}

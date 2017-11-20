@@ -13,9 +13,9 @@
 $('#banner<?php echo $module; ?>').owlCarousel({
 	items: 6,
 	autoPlay: 3000,
-	singleItem: true,
+	singleItem: false,
 	navigation: false,
-	pagination: false,
+	pagination: true,
 	transitionStyle: 'fade'
 });
 --></script>

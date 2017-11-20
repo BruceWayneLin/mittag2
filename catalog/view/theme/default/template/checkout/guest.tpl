@@ -307,7 +307,7 @@
   </div>
 </div>
 <?php if ($shipping_required) { ?>
-<div class="checkbox">
+<div class="checkbox hidden">
   <label>
     <?php if ($shipping_address) { ?>
     <input type="checkbox" name="shipping_address" value="1" checked="checked" />

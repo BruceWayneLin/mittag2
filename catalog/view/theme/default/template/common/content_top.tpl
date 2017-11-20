@@ -52,13 +52,10 @@
                     <?php echo $modules['0']; ?>
                 </div>
             </div>
-            <div class="row hidden">
-                <div id="module1" class="col-sm-6" style="">
-                    <?php echo $modules['1']; ?>
-                </div>
-                <div id="module2" class="col-sm-6" style="">
-                    <?php echo $modules['2']; ?>
-                </div>
+        </div>
+        <div class="col-xs-12" style="">
+            <div>
+                <?php echo $modules['1']; ?>
             </div>
         </div>
     </div>
@@ -89,9 +86,27 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+#box {
+    left: -8px;
+}
+
 .sidebar-nav .navbar li a {
     font-weight: normal;
     font-family: font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
+.product-layout {
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 </style>
+<!-- The jQuery library version >= 1.8 -->
+<script src="catalog/view/theme/default/template/product/productjs/prodjs2.js"></script>
+<!-- The core Waterfall library -->
+<script src="catalog/view/theme/default/template/product/productjs/prodjs3.js"></script>
+<script>
+    $(function(){
+        $('#box').waterfall();
+    })
+</script>
