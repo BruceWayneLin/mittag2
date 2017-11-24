@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機: localhost:3306
--- 產生時間： 2017 年 11 月 20 日 21:05
+-- 產生時間： 2017 年 11 月 25 日 01:54
 -- 伺服器版本: 5.6.36-cll-lve
 -- PHP 版本： 5.6.30
 
@@ -54,7 +54,9 @@ INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, 
 (4, 5, 'lin', 'test', '', '弟只一', '', '台北 (及鄰近地區)', '', 206, 3146, ''),
 (6, 7, '姆士', '詹', '', '11321231321321321321321321321321321321321321313132121231', '', '313132131313121321', '12212', 222, 3523, '[]'),
 (7, 8, '老詹', '吳', '', '113212313213213213213213213213213213213213213131321212311212121212121', '', '31313213131312132112121', '23232', 206, 3137, ''),
-(8, 9, 'wei', 'lin', '', '中和南山路', '', '中和', '', 206, 3137, '');
+(8, 9, 'wei', 'lin', '', '中和南山路', '', '中和', '', 206, 3137, ''),
+(9, 10, '林', '先生', '', '台北中山區中山路', '', '台北市', '', 206, 3154, ''),
+(10, 11, '林', '測試', '', '台北測試測試', '', '', '', 206, 3142, '');
 
 -- --------------------------------------------------------
 
@@ -382,7 +384,10 @@ INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `extraD
 (20, 0, 8, 'icmvankqdju32j5shr6nlfcd61', '[]', '14號(1.8cm)', '', '', '', '', 92, 0, '[]', 1, '2017-09-11 09:00:55'),
 (25, 0, 9, 'vtu569cnl4ho2dlker5u0rh0v4', '[]', '請選擇戒圍', '', '', '', '耳針式耳環', 91, 0, '[]', 1, '2017-09-13 11:09:35'),
 (26, 0, 9, 'vtu569cnl4ho2dlker5u0rh0v4', '[]', '4號(1.3cm)', '', '', '', '', 92, 0, '[]', 1, '2017-09-13 11:43:47'),
-(31, 0, 6, 'm51mcpf68qahp0o3pith20n1o0', '[]', '4號(1.3cm)', '', '', '', '耳夾式耳環', 81, 0, '[]', 1, '2017-11-04 17:10:54');
+(31, 0, 6, 'm51mcpf68qahp0o3pith20n1o0', '[]', '4號(1.3cm)', '', '', '', '耳夾式耳環', 81, 0, '[]', 1, '2017-11-04 17:10:54'),
+(36, 0, 1, 'rn74i9e664r4momgkqtnl0omf1', '', '', '', '', '', '', 116, 0, '[]', 1, '2017-11-25 01:33:05'),
+(37, 0, 0, 'rn74i9e664r4momgkqtnl0omf1', '[]', '請選擇戒圍', '16', '', '', '', 123, 0, '[]', 1, '2017-11-25 01:42:59'),
+(39, 0, 0, 'nlg3kjn7asp66dhq0omqj13ah2', '[]', '請選擇戒圍', '', '40', '', '', 114, 0, '[]', 1, '2017-11-25 01:48:03');
 
 -- --------------------------------------------------------
 
@@ -902,7 +907,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, '新台幣', 'TWD', 'NT', '', '0', 1.00000000, 1, '2017-11-20 19:51:59'),
+(1, '新台幣', 'TWD', 'NT', '', '0', 1.00000000, 1, '2017-11-24 15:18:18'),
 (2, '人民幣', 'CNY', '¥', '', '2', 0.21980000, 1, '2017-10-29 16:47:02'),
 (3, '港幣', 'HKD', 'HK', '', '2', 0.25799999, 1, '2017-10-29 16:47:02'),
 (4, '英鎊', 'GBP', '£', '', '2', 0.02520000, 1, '2017-10-29 16:47:02'),
@@ -952,7 +957,9 @@ INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `lang
 (5, 1, 0, 1, 'lin', 'test', 'testestestestestestestesetestesasteste1111111@gmail.com', '0932000181', '09123123123', '5f959a202366e1a15d27fae1d8d6cd33b3179328', 'OLdepV79g', NULL, NULL, 0, 4, '{\"1\":\"2017-07-02 21:22\"}', '::1', 1, 1, 0, '', '', '2017-07-09 17:03:12'),
 (7, 3, 0, 1, '姆士', '詹', 'ukjames312312@gmail.com', '0952829779', '', 'de3366f39c150a5a0040f7f5fb942e7bcbbe2c82', 'yNvyxSRBv', NULL, NULL, 1, 6, '{\"1\":\"2015-07-14\",\"3\":\"5\",\"4\":\"2017-08-30\",\"2\":\"3\"}', '61.228.19.76', 1, 1, 0, '', '', '2017-09-10 10:33:53'),
 (8, 1, 0, 1, '老詹', '吳', 'ukjames312312312@gmail.com', '0923232323', '', '6a0bfe5ae620aa100a7b25fe678fe2799dec1f5b', 'MQMWqTJyz', NULL, NULL, 1, 7, '{\"1\":\"2014-11-03\",\"4\":\"\",\"2\":\"3\",\"3\":\"5\"}', '61.228.19.76', 1, 1, 0, '', '', '2017-09-11 08:59:57'),
-(9, 1, 0, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', 'a142f940cc36d48497213e25fe274e1cf094214a', 'S4OcgUb6n', NULL, NULL, 1, 8, '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', '59.115.237.71', 1, 1, 0, '', '', '2017-09-13 08:33:22');
+(9, 1, 0, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', 'a142f940cc36d48497213e25fe274e1cf094214a', 'S4OcgUb6n', NULL, NULL, 1, 8, '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', '59.115.237.71', 1, 1, 0, '', '', '2017-09-13 08:33:22'),
+(10, 1, 0, 1, '林', '先生', 'testtestest@gmail.com', '0932000000', '', '2e5c4651a886d7bc5d1c75ae60f9ff99ef7ce397', 'JE7ICaUsX', NULL, NULL, 1, 9, '{\"4\":\"\",\"3\":\"\"}', '::1', 1, 1, 0, '', '', '2017-11-20 21:35:22'),
+(11, 1, 0, 1, '林', '測試', 'aafdsafdsfsdsdfsadfssfsfd@test.com', '093000000000', '', '32c8bdc62f1c0e3a5ea97103524c57c361758764', 'pDOWXeD8C', NULL, NULL, 1, 10, '{\"4\":\"\",\"3\":\"5\"}', '::1', 1, 1, 0, '', '', '2017-11-20 21:42:14');
 
 -- --------------------------------------------------------
 
@@ -1055,7 +1062,9 @@ INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added
 (12, 4, '61.228.19.76', '2017-09-10 08:17:17'),
 (13, 7, '61.228.19.76', '2017-09-10 10:33:54'),
 (14, 8, '61.228.19.76', '2017-09-11 08:59:57'),
-(15, 9, '59.115.237.71', '2017-09-13 08:33:23');
+(15, 9, '59.115.237.71', '2017-09-13 08:33:23'),
+(16, 10, '::1', '2017-11-20 21:35:23'),
+(17, 11, '::1', '2017-11-20 21:42:16');
 
 -- --------------------------------------------------------
 
@@ -1087,14 +1096,15 @@ INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `d
 (11, 'lingwei', '36.229.211.100', 5, '2017-05-23 14:43:21', '2017-05-23 14:44:07'),
 (10, 'ukjames312@hotmail.com', '36.229.150.4', 1, '2017-05-19 14:30:51', '2017-05-19 14:30:51'),
 (12, '', '::1', 2, '2017-08-21 14:17:18', '2017-10-23 14:52:43'),
-(14, 'admin', '220.135.38.215', 1, '2017-09-08 20:58:22', '2017-09-08 20:58:22'),
+(14, 'admin', '220.135.38.215', 2, '2017-09-08 20:58:22', '2017-11-25 00:20:32'),
 (15, 'ukjames312@gmail.com', '61.228.19.76', 5, '2017-09-10 22:33:31', '2017-09-10 22:34:25'),
 (16, 'ukjames', '61.228.19.76', 2, '2017-09-10 22:33:52', '2017-09-10 22:33:57'),
 (17, 'ukjames312@gmail.com', '59.115.237.71', 1, '2017-09-13 08:23:40', '2017-09-13 08:23:40'),
 (18, 'ligwei005@gmail.com', '59.115.237.71', 1, '2017-09-13 09:10:30', '2017-09-13 09:10:30'),
 (19, 'admin', '::1', 1, '2017-10-21 13:50:05', '2017-10-21 13:50:05'),
 (20, 'ukjames312@gmail.com', '36.229.208.124', 2, '2017-11-20 16:12:46', '2017-11-20 16:13:01'),
-(21, 'lingwei', '36.229.208.124', 1, '2017-11-20 16:13:13', '2017-11-20 16:13:13');
+(21, 'lingwei', '36.229.208.124', 1, '2017-11-20 16:13:13', '2017-11-20 16:13:13'),
+(22, 'aniki_wayne@yahoo.com.tw', '::1', 3, '2017-11-22 13:08:11', '2017-11-22 13:08:18');
 
 -- --------------------------------------------------------
 
@@ -2286,7 +2296,8 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (105, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 9, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '6655.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '59.115.237.71', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-13 09:11:28', '2017-09-13 09:12:52'),
 (106, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 9, 1, 'wei', 'lin', 'lingwei005@gmail.com', '0911672251', '', '{\"1\":\"2017-09-08\",\"4\":\"\",\"2\":\"\",\"3\":\"6\"}', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '銀行轉帳', 'bank_transfer', 'wei', 'lin', '', '中和南山路', '', '中和', '', '台灣', 206, '新北市', 3137, '', '[]', '固定運費', 'flat.flat', '', '3505.0000', 0, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '59.115.237.71', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4', '2017-09-13 11:22:31', '2017-09-13 11:22:31'),
 (107, 0, 'INV-2013-00', 0, 'MITTAG', 'http://localhost/mittag2/', 6, 1, '林', '測試', 'aniki_wayne@yahoo.com.tw', '091111111', '09123123123', '{\"1\":\"2017-07-19 21:22\"}', '林', '測試', '', '弟只弟只', '', '弟只', '', '台灣', 206, '花蓮縣', 3154, '', '[]', '銀行轉帳', 'bank_transfer', '林', '測試', '', '弟只弟只', '', '弟只', '', '台灣', 206, '花蓮縣', 3154, '', '[]', '固定運費', 'flat.flat', '', '2855.0000', 0, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '::1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2', '2017-10-23 20:52:58', '2017-10-23 20:52:58'),
-(108, 0, 'INV-2013-00', 0, 'MITTAG', 'http://localhost/mittag2/', 0, 1, 'test', 'test', 'anikiwayne@gmail.com', '0932000181', '', '{\"4\":\"\",\"3\":\"\"}', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '銀行轉帳', 'bank_transfer', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '固定運費', 'flat.flat', '', '2405.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '::1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2', '2017-11-04 17:25:04', '2017-11-04 17:25:06');
+(108, 0, 'INV-2013-00', 0, 'MITTAG', 'http://localhost/mittag2/', 0, 1, 'test', 'test', 'anikiwayne@gmail.com', '0932000181', '', '{\"4\":\"\",\"3\":\"\"}', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '銀行轉帳', 'bank_transfer', 'test', 'test', '', 'dfsfsfs', '', 'Redwood City', '1111', '台灣', 206, '台北市', 3135, '', '[]', '固定運費', 'flat.flat', '', '2405.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '::1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36', 'zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2', '2017-11-04 17:25:04', '2017-11-04 17:25:06'),
+(109, 0, 'INV-2013-00', 0, 'MITTAG', 'http://www.mittag.com.tw/', 1, 1, 'Wayne', 'Lin', 'Anikiwayne@gmail.com', '0932000181', '', '', 'Wayne', 'Lin', '', 'Taiwan', '', 'Taipei', '', '台灣', 206, '台北市', 3135, '', '[]', '銀行轉帳', 'bank_transfer', 'Wayne', 'Lin', '', 'Taiwan', '', 'Taipei', '', '台灣', 206, '台北市', 3135, '', '[]', '固定運費', 'flat.flat', '', '24691361.0000', 12, 0, '0.0000', 0, '', 1, 1, 'TWD', '1.00000000', '220.135.38.215', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36', 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7,ja;q=0.6', '2017-11-25 01:26:43', '2017-11-25 01:26:48');
 
 -- --------------------------------------------------------
 
@@ -2402,7 +2413,8 @@ INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id
 (75, 103, 1, 0, '', '2017-09-10 08:36:47'),
 (76, 104, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-09-10 12:00:51'),
 (77, 105, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-09-13 09:12:52'),
-(78, 108, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-11-04 17:25:06');
+(78, 108, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-11-04 17:25:06'),
+(79, 109, 12, 1, '銀行轉帳付款說明\n\n玉山分行\n\n★確定入帳後，我們會立即幫您處理，感謝您的支持與愛護★', '2017-11-25 01:26:48');
 
 -- --------------------------------------------------------
 
@@ -2597,7 +2609,9 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `extraDetail`, `
 (128, 106, '[]', '請選擇戒圍', '', '', '', '耳針式耳環', 91, 'earring test 01', 'ER777', 1, '3500.0000', '3500.0000', '0.0000', 0),
 (129, 107, '', '', '', '', '', '', 68, 'train necklace 火車項鍊', 'NL343', 1, '2850.0000', '2850.0000', '0.0000', 0),
 (130, 107, '', '', '', '', '', '', 81, 'test2', 'test1', 1, '0.0000', '0.0000', '0.0000', 0),
-(131, 108, '[]', '請選擇戒圍', '0', '', '0', '', 69, 'train baby bracelet 火車寶寶手鍊', 'BB307', 1, '2400.0000', '2400.0000', '0.0000', 0);
+(131, 108, '[]', '請選擇戒圍', '0', '', '0', '', 69, 'train baby bracelet 火車寶寶手鍊', 'BB307', 1, '2400.0000', '2400.0000', '0.0000', 0),
+(132, 109, '', '', '', '', '', '', 118, '手鍊全文案填寫測試', 'BR TEST001', 1, '12345678.0000', '12345678.0000', '0.0000', 0),
+(133, 109, '[]', '請選擇戒圍', '', '', '', '', 121, '銀器全文案填寫測試', 'SW TEST001', 1, '12345678.0000', '12345678.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2976,7 +2990,10 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (279, 107, 'total', '帳單總計', '2855.0000', 9),
 (280, 108, 'sub_total', '商品總計', '2400.0000', 1),
 (281, 108, 'shipping', '固定運費', '5.0000', 3),
-(282, 108, 'total', '帳單總計', '2405.0000', 9);
+(282, 108, 'total', '帳單總計', '2405.0000', 9),
+(283, 109, 'sub_total', '商品總計', '24691356.0000', 1),
+(284, 109, 'shipping', '固定運費', '5.0000', 3),
+(285, 109, 'total', '帳單總計', '24691361.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -3062,8 +3079,8 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `texture`, `deliveringTime`, `deliveringExtra`, `earingType`, `extraDetail`, `quantity`, `stock_status_id`, `ringSizeStart`, `ringSizeEnd`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `braceWidth`, `braceLong`, `braceSeleLen`, `braceletDiameter`, `braceHeight`, `necklaceLength`, `date_available`, `braceNote`, `weight`, `weight_class_id`, `length`, `width`, `height`, `secondaryNote`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`, `activity_title`, `activity_desc`, `eng_name`) VALUES
-(118, 'BR TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '20', '', '33.00', '', '2017-11-20', '                    ', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:50:48', '2017-11-20 13:04:52', '', '', 'BR TEST001'),
-(114, 'NL TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 2123131321, 0, 0, '22.00', '11.00', '', '', '33.00', '40', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:05:22', '0000-00-00 00:00:00', '', '', 'NL TEST001'),
+(118, 'BR TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 0, 7, 0, 0, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '20', '', '33.00', '', '2017-11-20', '                    ', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 2, '2017-11-20 12:50:48', '2017-11-20 13:04:52', '', '', 'BR TEST001'),
+(114, 'NL TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;/li&gt;&lt;li&gt;交貨時間說明交貨時間說明交貨時間說明交貨時間說明交貨時間說明&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 2123131321, 0, 0, '22.00', '11.00', '', '', '33.00', '40', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 12:05:22', '0000-00-00 00:00:00', '', '', 'NL TEST001'),
 (98, 'RG705', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 若有其他尺寸上的需求，則需要增加5個工作天&lt;/p&gt;&lt;p&gt;2. 本產品不提供硫化服務&lt;/p&gt;', '', '', 1, 7, 5, 11, 'catalog/Ring(RG)/RG705/RG705 turning ring_轉折戒指_04_S.jpg', 0, 1, 1950, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '                                                            ', '0.00', 1, '2.30', '2.20', '0.30', '', 1, 1, 1, 1, 1, 5, '2017-11-19 11:43:38', '2017-11-19 12:31:23', '', '', 'turning'),
 (99, 'RG704', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 若需其他尺寸則需增加3個工作日&lt;/p&gt;&lt;p&gt;2. 本產品可提供雷射刻字，但需另加收費&lt;/p&gt;', '', '若需其他尺寸，則須依照標準出貨日再增加3天', 1, 7, 0, 12, 'catalog/Ring(RG)/RG704/RG704 breakout ring_突破戒指_03_S.jpg', 0, 1, 3800, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '2.60', '2.30', '1.10', '', 1, 1, 1, 1, 1, 1, '2017-11-19 13:52:49', '0000-00-00 00:00:00', '', '', 'breakout'),
 (100, 'RG703', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;1. 本產品可提供硫化服務，下單時請提出需求&lt;/p&gt;&lt;p&gt;2. 本產品另有同款項鍊可供選擇&lt;/p&gt;', '', '1. 若需其他尺寸，則需依照一般出貨時間再增加3天', 1, 7, 0, 11, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _02_S.jpg', 0, 1, 2950, 0, 0, '0.00', '0.00', '', '', '0.00', '', '2017-11-19', '', '0.00', 1, '2.30', '2.20', '0.90', '', 1, 1, 1, 1, 1, 1, '2017-11-19 14:07:47', '0000-00-00 00:00:00', '', '', 'brezel'),
@@ -3076,16 +3093,16 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (107, 'NL716', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL716/NL716 violin necklace_小提琴項鍊_04_S.jpg', 0, 1, 3550, 0, 0, '0.00', '0.00', '', '', '0.00', '45', '2017-11-20', '                    ', '0.00', 1, '3.10', '1.00', '0.50', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:09:24', '2017-11-20 11:12:54', '', '', 'violin'),
 (108, 'NL715', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_04_S.jpg', 0, 1, 2650, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '', '0.00', 1, '1.20', '1.00', '0.30', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:19:11', '0000-00-00 00:00:00', '', '', 'diamond heart'),
 (109, 'NL714', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL714/NL714 elephant necklace_大象項鍊_01_S.jpg', 0, 1, 2400, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                                        ', '0.00', 1, '1.30', '0.90', '0.30', '', 1, 1, 1, 1, 1, 4, '2017-11-20 11:24:13', '2017-11-20 14:43:35', '', '', 'elephant'),
-(112, 'NL712', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_04_S.jpg', 0, 1, 3400, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '1.50', '1.30', '0.60', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:44:55', '2017-11-20 11:46:25', '', '', 'duck'),
+(112, 'NL712', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL712/NL712 duck necklace_鴨子項鍊_04_S.jpg', 0, 1, 3400, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '1.50', '1.30', '0.60', '', 1, 1, 1, 1, 1, 2, '2017-11-20 11:44:55', '2017-11-20 11:46:25', '', '', 'duck'),
 (111, 'NL713', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL713/NL713 Lifebuoy_ 救生圈項鍊_03_S.jpg', 0, 1, 5500, 0, 0, '0.00', '0.00', '', '', '0.00', '60', '2017-11-20', '', '0.00', 1, '2.30', '2.30', '0.30', '', 1, 1, 1, 1, 1, 1, '2017-11-20 11:34:05', '0000-00-00 00:00:00', '', '', 'Lifebuoy'),
 (113, 'NL711', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 3150, 0, 0, '0.00', '0.00', '', '', '0.00', '40', '2017-11-20', '                    ', '0.00', 1, '1.50', '1.10', '0.90', '', 1, 1, 1, 1, 1, 0, '2017-11-20 11:54:50', '2017-11-20 11:56:34', '', '', 'paper rabbit'),
 (117, 'ER TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 2, '2017-11-20 12:44:33', '0000-00-00 00:00:00', '', '', 'ER TEST001'),
-(116, 'RG TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註', 1, 7, 1, 13, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 123445679, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '&lt;ol&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 12:34:18', '2017-11-20 12:36:52', '', '', 'RG TEST001'),
+(116, 'RG TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註\r\n戒指選項備註戒指選項備註戒指選項備註', 1, 7, 1, 13, 'catalog/Ring(RG)/RG701/RG701 frather ring_羽毛戒指_01_S.jpg', 0, 1, 123445679, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '&lt;ol&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註主飾品備註主飾品備註&lt;/li&gt;&lt;li&gt;主飾品備註主飾品備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 12:34:18', '2017-11-20 12:36:52', '', '', 'RG TEST001'),
 (119, 'BR TEST002', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL711/NL711 paper rabbit necklace_捲紙兔項鍊_04_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '6.5', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 12:59:11', '0000-00-00 00:00:00', '', '', 'BR TEST002'),
 (120, 'BB TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間交貨時間交貨時間交貨時間&lt;/li&gt;&lt;li&gt;交貨時間交貨時間交貨時間&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Necklace(NL)/NL715/NL715 diamond heart necklace_鑽石心項鍊_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 13:04:00', '0000-00-00 00:00:00', '', '', 'BB GIFT TEST001'),
-(121, 'SW TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 0, '2017-11-20 13:09:26', '0000-00-00 00:00:00', '', '', 'SW TEST001'),
+(121, 'SW TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 0, 7, 0, 0, 'catalog/Ring(RG)/RG702/RG702 drip_滴水戒指_01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 2, '2017-11-20 13:09:26', '0000-00-00 00:00:00', '', '', 'SW TEST001'),
 (122, 'OTS TEST001', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '&lt;ol&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註&lt;/li&gt;&lt;li&gt;交貨時間備註交貨時間備註交貨時間備註交貨時間備註交貨時間備註&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;', '', '', 1, 7, 0, 0, 'catalog/Ring(RG)/RG703/RG703 brezel ring_德國結戒指 _01_S.jpg', 0, 1, 12345678, 0, 0, '22.00', '11.00', '', '', '33.00', '', '2017-11-20', '', '0.00', 1, '44.00', '55.00', '66.00', '主飾品長度備註主飾品長度備註主飾品長度備註主飾品長度備註', 1, 1, 1, 1, 1, 1, '2017-11-20 13:13:02', '0000-00-00 00:00:00', '', '', 'OTS TEST001'),
-(123, 'NL716', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_04_S.jpg', 0, 1, 2750, 0, 0, '0.00', '0.00', '16', '', '0.00', '', '2017-11-20', '', '0.00', 1, '1.90', '1.30', '0.30', '', 1, 1, 1, 1, 1, 3, '2017-11-20 14:58:09', '0000-00-00 00:00:00', '', '', 'crown');
+(123, 'NL716', '', '', '', '', '', '', 'Taiwan', '925銀', '約14個工作天，不包含運送時間', '', '', '', 1, 7, 0, 0, 'catalog/Bracelet(BL)/BL716/BL716 crown bracelet_王冠手鍊_04_S.jpg', 0, 1, 2750, 0, 0, '0.00', '0.00', '16', '', '0.00', '', '2017-11-20', '', '0.00', 1, '1.90', '1.30', '0.30', '', 1, 1, 1, 1, 1, 4, '2017-11-20 14:58:09', '0000-00-00 00:00:00', '', '', 'crown');
 
 -- --------------------------------------------------------
 
@@ -3744,8 +3761,8 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (1024, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
 (569, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (568, 0, 'voucher', 'voucher_status', '0', 0),
-(551, 0, 'bank_transfer', 'bank_transfer_status', '1', 0),
-(550, 0, 'bank_transfer', 'bank_transfer_geo_zone_id', '0', 0),
+(1048, 0, 'bank_transfer', 'bank_transfer_status', '1', 0),
+(1047, 0, 'bank_transfer', 'bank_transfer_geo_zone_id', '0', 0),
 (1022, 0, 'config', 'config_file_max_size', '300000', 0),
 (1023, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
 (1003, 0, 'config', 'config_ftp_root', '', 0),
@@ -3782,11 +3799,8 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (102, 0, 'total', 'total_status', '1', 0),
 (560, 0, 'tax', 'tax_status', '0', 0),
 (104, 0, 'free_checkout', 'free_checkout_sort_order', '1', 0),
-(105, 0, 'cod', 'cod_sort_order', '5', 0),
-(106, 0, 'cod', 'cod_total', '0.01', 0),
-(107, 0, 'cod', 'cod_order_status_id', '1', 0),
-(108, 0, 'cod', 'cod_geo_zone_id', '0', 0),
-(109, 0, 'cod', 'cod_status', '1', 0),
+(1042, 0, 'cod', 'cod_status', '1', 0),
+(1041, 0, 'cod', 'cod_geo_zone_id', '0', 0),
 (110, 0, 'shipping', 'shipping_status', '1', 0),
 (111, 0, 'shipping', 'shipping_estimator', '1', 0),
 (567, 0, 'coupon', 'coupon_sort_order', '4', 0),
@@ -3862,10 +3876,9 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (989, 0, 'config', 'config_affiliate_approval', '0', 0),
 (987, 0, 'config', 'config_stock_warning', '0', 0),
 (988, 0, 'config', 'config_stock_checkout', '0', 0),
-(549, 0, 'bank_transfer', 'bank_transfer_order_status_id', '12', 0),
-(548, 0, 'bank_transfer', 'bank_transfer_total', '100', 0),
-(547, 0, 'bank_transfer', 'bank_transfer_bank1', '玉山分行', 0),
-(552, 0, 'bank_transfer', 'bank_transfer_sort_order', '', 0),
+(1046, 0, 'bank_transfer', 'bank_transfer_order_status_id', '12', 0),
+(1045, 0, 'bank_transfer', 'bank_transfer_total', '100', 0),
+(1044, 0, 'bank_transfer', 'bank_transfer_bank1', '玉山分行', 0),
 (555, 0, 'low_order_fee', 'low_order_fee_total', '', 0),
 (556, 0, 'low_order_fee', 'low_order_fee_fee', '', 0),
 (557, 0, 'low_order_fee', 'low_order_fee_tax_class_id', '0', 0),
@@ -3886,9 +3899,8 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (974, 0, 'config', 'config_customer_price', '0', 0),
 (973, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
 (972, 0, 'config', 'config_customer_group_id', '1', 0),
-(661, 0, 'pickup', 'pickup_geo_zone_id', '0', 0),
-(662, 0, 'pickup', 'pickup_status', '0', 0),
-(663, 0, 'pickup', 'pickup_sort_order', '', 0),
+(1033, 0, 'pickup', 'pickup_sort_order', '', 0),
+(1032, 0, 'pickup', 'pickup_status', '0', 0),
 (971, 0, 'config', 'config_customer_search', '0', 0),
 (960, 0, 'config', 'config_product_count', '1', 0),
 (961, 0, 'config', 'config_limit_admin', '20', 0),
@@ -3923,7 +3935,12 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (941, 0, 'config', 'config_layout_id', '4', 0),
 (942, 0, 'config', 'config_name', 'MITTAG', 0),
 (938, 0, 'config', 'config_meta_description', 'MITTAG', 0),
-(937, 0, 'config', 'config_meta_title', 'MITTAG', 0);
+(937, 0, 'config', 'config_meta_title', 'MITTAG', 0),
+(1031, 0, 'pickup', 'pickup_geo_zone_id', '0', 0),
+(1040, 0, 'cod', 'cod_order_status_id', '1', 0),
+(1039, 0, 'cod', 'cod_total', '1', 0),
+(1043, 0, 'cod', 'cod_sort_order', '1', 0),
+(1049, 0, 'bank_transfer', 'bank_transfer_sort_order', '', 0);
 
 -- --------------------------------------------------------
 
@@ -9395,7 +9412,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- 使用資料表 AUTO_INCREMENT `oc_address`
 --
 ALTER TABLE `oc_address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_affiliate`
 --
@@ -9455,7 +9472,7 @@ ALTER TABLE `oc_banner_image`
 -- 使用資料表 AUTO_INCREMENT `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_category`
 --
@@ -9490,7 +9507,7 @@ ALTER TABLE `oc_currency`
 -- 使用資料表 AUTO_INCREMENT `oc_customer`
 --
 ALTER TABLE `oc_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_customer_activity`
 --
@@ -9510,12 +9527,12 @@ ALTER TABLE `oc_customer_history`
 -- 使用資料表 AUTO_INCREMENT `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
-  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_customer_reward`
 --
@@ -9650,7 +9667,7 @@ ALTER TABLE `oc_option_value`
 -- 使用資料表 AUTO_INCREMENT `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_custom_field`
 --
@@ -9660,7 +9677,7 @@ ALTER TABLE `oc_order_custom_field`
 -- 使用資料表 AUTO_INCREMENT `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_option`
 --
@@ -9670,7 +9687,7 @@ ALTER TABLE `oc_order_option`
 -- 使用資料表 AUTO_INCREMENT `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_recurring`
 --
@@ -9690,7 +9707,7 @@ ALTER TABLE `oc_order_status`
 -- 使用資料表 AUTO_INCREMENT `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=283;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=286;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_order_voucher`
 --
@@ -9770,7 +9787,7 @@ ALTER TABLE `oc_review`
 -- 使用資料表 AUTO_INCREMENT `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1028;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1050;
 --
 -- 使用資料表 AUTO_INCREMENT `oc_stock_status`
 --
